@@ -171,7 +171,7 @@ $count = 0;
 
 for($i=count($a)-1;$i>=0;$i--){
 	$limit = 12/$a[$i];
-	for($j=0;j<$a[$i];$j++){
+	for($j=0;$j<$a[$i];$j++){
 		echo '<div class="col-sm-'.$limit.'">';
 		echo $mlab_data[0]->source[$count++]->name;
 		echo '</div>';
