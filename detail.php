@@ -105,7 +105,7 @@
 	 	<?php 
 	 		for($i=0;$i<$count_room;$i++){
 	 			if($i==0||$i==$count_room-1){
-	 				echo'<div class="col-12" >';
+	 				echo'<div class="col-6" >';
 	 			}
 	 			else{
 	 				echo'<div class="col-4" >';
@@ -121,10 +121,6 @@
 	 		
 	 	?>
 	 </div>
-
-
-
-
 </div>
 
 
