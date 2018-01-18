@@ -112,7 +112,7 @@
 	 			}
 	 				
 	 			echo '<div class="panel panel-default">
-					<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image"></div>
+					<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>
 				</div>
 
 	 	
