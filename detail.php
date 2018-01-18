@@ -166,10 +166,10 @@
 			function makelightdiv($light,$limit){
 				$text = '<div class="col-sm-'.$limit.'">';
 				$text .= '<div class="panel panel-success">
-						  <div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>
-
-						  </div>';
+						  <div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>';
 				$text .= $light->name;
+				$text .= '</div>';
+				
 				$text .= '</div>';
 				return $text;
 			}
