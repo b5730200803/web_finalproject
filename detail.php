@@ -159,8 +159,10 @@
 							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
 						<div class="col-sm-12">
-							<div class="panel-body">
-								<img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
+							<div class="panel panel-success">
+								<div class="panel-body">
+									<img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
+								</div>
 							</div>
 						</div>
 					</div>
