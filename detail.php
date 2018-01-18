@@ -109,7 +109,7 @@
 	 	<div class="col-12" class="front-back" >
 	 		<div class="panel panel-default">
 				<div class="panel-body">
-					<img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image">
+					<img src="img/light-open.png" class="img-responsive" style="width:10%" alt="Image">
 				</div>
 			</div>
 	 	</div>
