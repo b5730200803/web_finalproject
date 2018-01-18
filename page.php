@@ -84,7 +84,8 @@
 			<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 			<div class="panel-footer text-center">
 				<form action="detail.php" method="post">
-					<button class="btn btn-success ">รายละเอียด</button>
+					<input type="text" name="NameHome" value="'.$mlab_obj->name.'" >
+					<button class="btn btn-success name"Detail" ">รายละเอียด</button>
 				</form>
 			</div>
 		  </div>
