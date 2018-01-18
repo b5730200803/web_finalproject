@@ -32,7 +32,10 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-  	
+  	#fornt{
+  		border-color:#b9f6ca;
+  		height: 200px; 
+  	}
  
 	  
 
@@ -102,6 +105,11 @@
 
 
 <div class="container"> 
+	<div class="row">
+		<div class="col-sm-12" id="front">
+			fdskjddhfjkhfg
+		</div>
+	</div>
 
 	<div class="row">
 	 	<?php 
