@@ -107,7 +107,12 @@
 <div class="container">  
 	 <div class="row">
 	 	<div class="col-12" class="front-back" >
-	 		lksdjfglkdfgljgh
+	 		<div class="panel panel-success">
+				<div class="panel-heading ">รายละเอียด </div>
+				<div class="panel-body">
+					พะเหะพ้เด
+				</div>
+			</div>
 	 	</div>
 	 </div>
 
