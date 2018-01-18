@@ -106,13 +106,13 @@
 	 		$i
 	 		for($i=0;$i<$count_room;$i++){
 	 			if($i==0||$i==$count_room-1){
-	 				echo'<div class="col-12" >'.
+	 				echo'<div class="col-12" >';
 	 			}
 	 			else{
-	 				echo'<div class="col-4" >'.
+	 				echo'<div class="col-4" >';
 	 			}
 	 				
-	 			.'<div class="panel panel-default">
+	 			echo '<div class="panel panel-default">
 					<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image"></div>
 				</div>
 
