@@ -149,7 +149,7 @@
 
 
 <div class="container" > 
-	<div class="row" style="margin-bottom: 20px; ">
+	<div class="row" >
 		<div class="col-sm-12" id="front">
 			<div class="row">
 				<div class="col-sm-4">
@@ -177,7 +177,7 @@
 				</div>
 			</div>
 		</div>
-		<br><br>
+		
 	</div>
 	<div class="row">
 		<?php
