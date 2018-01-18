@@ -129,8 +129,9 @@
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 				</div>
 			</div>
-			<br><br>
+
 		</div>
+		<br><br>
 	</div>
 	<div class="row">
 		<?php
