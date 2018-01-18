@@ -84,7 +84,7 @@
 				<div class="panel-heading ">ชื่อบ้าน :'.$mlab_obj->name.'</div>
 
 			</div>
-		</div>'
+		</div>';
 
 
 
