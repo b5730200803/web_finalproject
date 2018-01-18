@@ -37,6 +37,7 @@
   		width: 100px;
   		height: 50px;
   		border: 5px;
+  		border-color: rgb(0,0,0);
   	}
 	  
 
