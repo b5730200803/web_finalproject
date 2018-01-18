@@ -31,12 +31,7 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-    #namehome{
-    	text-align: left;
-    }
-    #idhome{
-    	text-align: right;;
-    }
+  
 	  
 
   </style>
@@ -86,7 +81,7 @@
 	  	foreach($mlab_data as $mlab_obj) {
 			  echo '<div class="col-sm-4"> 
 		  <div class="panel panel-success">
-			<div class="panel-heading row"><div class="col-6" id="namehome">ชื่อบ้าน :'.$mlab_obj->name.'</div> <div class="col-6" id="idhome">รหัสบ้าน :'.$mlab_obj->id.'</div></div>
+			<div class="panel-heading row">ชื่อบ้าน :'.$mlab_obj->name.' รหัสบ้าน :'.$mlab_obj->id.'</div>
 			<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 			<div class="panel-footer text-center">
 				<button class="btn btn-success ">รายละเอียด</button>
