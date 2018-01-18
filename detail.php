@@ -32,7 +32,7 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-  	#fornt{
+  	#front{
   		border-color:#b9f6ca;
   		height: 200px; 
   	}
