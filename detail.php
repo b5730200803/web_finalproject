@@ -81,7 +81,7 @@
 	<?php
 		$count_room = count($mlab_data[0]->source);
 		echo '
-		<div class="col-12">
+		<div class="col-5">
 			<div class="panel panel-success">
 				<div class="panel-heading ">รายละเอียด </div>
 				<div class="panel-body">
