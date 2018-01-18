@@ -33,12 +33,7 @@
       padding: 25px;
     }
   	
-  	front-back{
-  		width: 100px;
-  		height: 50px;
-  		border: 5px;
-  		border-color: rgb(0,0,0);
-  	}
+ 
 	  
 
   </style>
@@ -107,7 +102,7 @@
 
 <div class="container">  
 	 <div class="row">
-	 	<div class="col-12" class="front-back" >
+	 	<div class="col-12" >
 	 		<?php 
 
 	 			echo'	
