@@ -85,7 +85,7 @@
 			<div class="panel-footer text-center">
 				<form action="detail.php" method="post">
 
-					<input type="hidden" name="NameHome" value="'.$mlab_obj->name.'>
+					<input type="hidden" name="NameHome" value="'.$mlab_obj->name.'">
 					<input   class="btn btn-success" name="btnSubmit" type="submit" value="Submit">
 					
 				</form>
