@@ -84,7 +84,7 @@
   <div class="row">
    
 	<?php
-
+		$count_room = count($mlab_data[0]->source);
 		echo '
 		<div class="col-12">
 			<div class="panel panel-success">
@@ -93,6 +93,7 @@
 					หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
 					ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 					รหัสบ้าน : '.$mlab_data[0]->password.'<br>
+					จำนวนห้อง : '.$count_room.'
 				</div>
 			</div>
 		</div>';
@@ -108,6 +109,7 @@
 	 <div class="row">
 	 	<div class="col-12" class="front-back" >
 	 		<?php 
+
 	 			echo'	
 	 			<div class="panel panel-default">
 					<div class="panel-body">
