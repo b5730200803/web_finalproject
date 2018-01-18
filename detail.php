@@ -84,7 +84,7 @@
 				<div class="panel-heading ">รายละเอียด </div>
 				<div class="panel-body">
 					หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
-					ชื่อบ้าน : '.$mlab_date[0]->name.'<br>
+					ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 					รหัสบ้าน : '.$mlab_data[0]->password.'<br>
 
 
