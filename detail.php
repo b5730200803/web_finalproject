@@ -129,7 +129,6 @@
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 				</div>
 			</div>
-
 		</div>
 		<br><br>
 	</div>
@@ -167,7 +166,7 @@
 			function makelightdiv($light,$limit){
 				$text = '<div class="col-sm-'.$limit.'">';
 				$text .= '<div class="panel panel-success">
-						  <div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image"></div>
+						  <div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>
 
 						  </div>';
 				$text .= $light->name;
