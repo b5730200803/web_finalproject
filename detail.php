@@ -33,7 +33,7 @@
       padding: 25px;
     }
   	#front{
-  		
+  		margin-bottom: 20px; 
   		height: 200px; 
   	}
  
