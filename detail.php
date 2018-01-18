@@ -110,7 +110,7 @@
 	 				echo'<div class="col-sm-12" >';
 	 			}
 	 			else{
-	 				echo'<div class="col-sm-4" >';
+	 				echo'<div class="col-sm-3" >';
 	 			}
 	 				
 	 			echo '<div class="panel panel-default">
