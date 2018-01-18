@@ -3,7 +3,51 @@
 	$HomeID = $_POST["NameID"];
 	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
-	
+
+	$number = count($mlab_data[0]->source)-2;
+	$bound = 4;
+
+
+
+	function set($number,$bound){
+		$a = array();
+		$i=0;
+		while($number-$bound>0){
+			$a[$i] = $bound;
+			$number = $number-$bound;
+			$i++;
+		}
+		$a[$i] = $number;
+		return $a;
+	}
+
+	function control($a,$index){
+		if($index==0)return $a;
+		if($a[$index-1]-$a[$index]>1){
+			$a[$index-1] -= 1;
+			$a[$index] += 1;
+			return control($a,$index-1);
+		}else{
+			return $a;
+		}
+
+	}
+
+	function makelightdiv($light,$limit){
+		$text = '<div class="col-sm-'.$limit.'">';
+		
+		$text .= '<div class="panel panel-success">';
+		$text .= $light->name;
+		$text .= '<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>';
+		
+		$text .= '</div>';
+		
+		$text .= '</div>';
+		return $text;
+	}
+
+	$a = set($number,4);
+	$a = control($a,count($a)-1);
 
 ?>
 <html lang="en">
@@ -119,7 +163,10 @@
 						<div class="col-sm-12">
 							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
-						<div class="col-sm-12"></div>
+						<div class="col-sm-12">
+							<?php echo makelightdiv($mlab_data[0]->source[0],12); ?>
+
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
@@ -134,52 +181,10 @@
 	</div>
 	<div class="row">
 		<?php
-			$number = count($mlab_data[0]->source)-2;
-			$bound = 4;
 
+			
 
-
-			function set($number,$bound){
-				$a = array();
-				$i=0;
-				while($number-$bound>0){
-					$a[$i] = $bound;
-					$number = $number-$bound;
-					$i++;
-				}
-				$a[$i] = $number;
-				return $a;
-			}
-
-			function control($a,$index){
-				if($index==0)return $a;
-				if($a[$index-1]-$a[$index]>1){
-					$a[$index-1] -= 1;
-					$a[$index] += 1;
-					return control($a,$index-1);
-				}else{
-					return $a;
-				}
-
-			}
-
-			function makelightdiv($light,$limit){
-				$text = '<div class="col-sm-'.$limit.'">';
-				
-				$text .= '<div class="panel panel-success">';
-				$text .= $light->name;
-				$text .= '<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>';
-				
-				$text .= '</div>';
-				
-				$text .= '</div>';
-				return $text;
-			}
-
-			$a = set($number,4);
-			$a = control($a,count($a)-1);
-
-			echo makelightdiv($mlab_data[0]->source[0],12);
+			
 
 			$count = 1;
 			for($i=count($a)-1;$i>=0;$i--){
