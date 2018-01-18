@@ -132,8 +132,53 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="row">
+<?php
+$number = count($mlab_data[0]->source);
+$bound = 4;
+
+
+
+function set($number,$bound){
+	$a = array();
+	$i=0;
+	while($number-$bound>0){
+		$a[$i] = $bound;
+		$number = $number-$bound;
+		$i++;
+	}
+	$a[$i] = $number;
+	return $a;
+}
+
+function control($a,$index){
+	if($index==0)return $a;
+	if($a[$index-1]-$a[$index]>1){
+		$a[$index-1] -= 1;
+		$a[$index] += 1;
+		return control($a,$index-1);
+	}else{
+		return $a;
+	}
+
+}
+
+
+$a = set($number,4);
+$a = control($a,count($a)-1);
+
+$count = 0;
+
+for($i=count($a)-1;$i>=0;$i--){
+	$limit = 12/$a[$i];
+	for($j=0;j<$a[$i];$j++){
+		echo '<div class="col-sm-'.$limit.'">';
+		echo $mlab_data[0]->source[$count++]->name;
+		echo '</div>';
+	}
+}
+?>
+	
 	
 	</div>
 	
