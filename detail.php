@@ -81,7 +81,7 @@
 		echo '
 		<div class="col-12">
 			<div class="panel panel-success">
-				<div class="panel-heading ">ชื่อบ้าน :'.$mlab_obj->name.'</div>
+				<div class="panel-heading ">ชื่อบ้าน :'.$mlab_data[0]->name.'</div>
 
 			</div>
 		</div>';
