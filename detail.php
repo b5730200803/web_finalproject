@@ -134,7 +134,7 @@
 	</div>
 	<div class="row">
 <?php
-$number = count($mlab_data[0]->source);
+$number = count($mlab_data[0]->source)-2;
 $bound = 4;
 
 
@@ -163,22 +163,29 @@ function control($a,$index){
 
 }
 
+function makelightdiv($light,$limit){
+	$text = '<div class="col-sm-'.$limit.'">';
+	$text .= $light->name;
+	$text .= '</div>';
+	return $text;
+}
 
 $a = set($number,4);
 $a = control($a,count($a)-1);
 
-$count = 0;
+echo makelightdiv($mlab_data[0]->source[0],12);
 
+$count = 1;
 for($i=count($a)-1;$i>=0;$i--){
 	$limit = 12/$a[$i];
 	for($j=0;$j<$a[$i];$j++){
-		echo '<div class="col-sm-'.$limit.'">';
-		echo $mlab_data[0]->source[$count++]->name;
-		echo '</div>';
+		echo makelightdiv($mlab_data[0]->source[$count++],$limit);
 	}
 }
+
+echo makelightdiv($mlab_data[0]->source[$number+1],12);
 ?>
-	
+
 	
 	</div>
 	
