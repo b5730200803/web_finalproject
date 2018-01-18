@@ -107,11 +107,20 @@
 <div class="container">  
 	 <div class="row">
 	 	<div class="col-12" class="front-back" >
-	 		<div class="panel panel-default">
-				<div class="panel-body">
-					<img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
-				</div>
-			</div>
+	 		<?php 
+	 			echo'	
+	 			<div class="panel panel-default">
+					<div class="panel-body">
+						'.$mlab_data[0]->source[0]->name.'
+						<img src="img/light-open.png" class="img-responsive " style="width:100px" alt="Image">
+					</div>
+				</div>';
+
+
+
+
+	 		?>
+	 	
 	 	</div>
 	 </div>
 
