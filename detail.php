@@ -32,10 +32,16 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-  
+  	
+  	front-back{
+  		width: 100px;
+  		height: 50px;
+  		border: 5px;
+  	}
 	  
 
   </style>
+  	}
    
 </head>
 <body>
@@ -99,7 +105,7 @@
 
 <div class="container">  
 	 <div class="row">
-	 	<div class="col-12">
+	 	<div class="col-12" class="front-back" >
 	 		lksdjfglkdfgljghlkdjghlkjdlgkjhlkdghkldglkhjgfhlks
 	 	</div>
 	 </div>
