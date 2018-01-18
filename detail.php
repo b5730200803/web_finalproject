@@ -86,23 +86,17 @@
 					หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
 					ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 					รหัสบ้าน : '.$mlab_data[0]->password.'<br>
-
-
 				</div>
-
 			</div>
 		</div>';
-
-
-
 	 
-	  	
-
 	?>
 
 
   </div>
 </div><br>
+
+<hr>
 
 
 
