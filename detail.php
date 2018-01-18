@@ -120,10 +120,9 @@
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
-				</div>
+				
 				</div>
 			</div>
-
 		</div>
 	</div>
 
