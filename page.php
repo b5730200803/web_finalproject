@@ -86,7 +86,8 @@
 				<form action="detail.php" method="post">
 
 					<input type="hidden" name="NameHome" value="'.$mlab_obj->name.'>
-					<button class="btn btn-success name"Detail" ">รายละเอียด</button>
+					<input   class="btn btn-success" name="btnSubmit" type="submit" value="Submit">
+					
 				</form>
 			</div>
 		  </div>
