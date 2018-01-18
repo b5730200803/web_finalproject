@@ -109,7 +109,7 @@
 		<div class="col-sm-12" id="front">
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="img/tree.png" class="img-responsive" style="width:20px" alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:100px" alt="Image" >
 				</div>
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
