@@ -129,7 +129,7 @@
 	 		
 	 	?>
 	</div>
-	div class="row">
+	<div class="row">
 		<div class="col-12" >
 			<div class="panel panel-default">
 				<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
