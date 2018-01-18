@@ -133,61 +133,65 @@
 		</div>
 	</div>
 	<div class="row">
-<?php
-$number = count($mlab_data[0]->source)-2;
-$bound = 4;
+		<?php
+			$number = count($mlab_data[0]->source)-2;
+			$bound = 4;
 
 
 
-function set($number,$bound){
-	$a = array();
-	$i=0;
-	while($number-$bound>0){
-		$a[$i] = $bound;
-		$number = $number-$bound;
-		$i++;
-	}
-	$a[$i] = $number;
-	return $a;
-}
+			function set($number,$bound){
+				$a = array();
+				$i=0;
+				while($number-$bound>0){
+					$a[$i] = $bound;
+					$number = $number-$bound;
+					$i++;
+				}
+				$a[$i] = $number;
+				return $a;
+			}
 
-function control($a,$index){
-	if($index==0)return $a;
-	if($a[$index-1]-$a[$index]>1){
-		$a[$index-1] -= 1;
-		$a[$index] += 1;
-		return control($a,$index-1);
-	}else{
-		return $a;
-	}
+			function control($a,$index){
+				if($index==0)return $a;
+				if($a[$index-1]-$a[$index]>1){
+					$a[$index-1] -= 1;
+					$a[$index] += 1;
+					return control($a,$index-1);
+				}else{
+					return $a;
+				}
 
-}
+			}
 
-function makelightdiv($light,$limit){
-	$text = '<div class="col-sm-'.$limit.'">';
-	$text .= $light->name;
-	$text .= '</div>';
-	return $text;
-}
+			function makelightdiv($light,$limit){
+				$text = '<div class="col-sm-'.$limit.'">';
+				$text .= '<div class="panel panel-success">
+						  <div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image"></div>
 
-$a = set($number,4);
-$a = control($a,count($a)-1);
+						  </div>';
+				$text .= $light->name;
+				$text .= '</div>';
+				return $text;
+			}
 
-echo makelightdiv($mlab_data[0]->source[0],12);
+			$a = set($number,4);
+			$a = control($a,count($a)-1);
 
-$count = 1;
-for($i=count($a)-1;$i>=0;$i--){
-	$limit = 12/$a[$i];
-	for($j=0;$j<$a[$i];$j++){
-		echo makelightdiv($mlab_data[0]->source[$count++],$limit);
-	}
-}
+			echo makelightdiv($mlab_data[0]->source[0],12);
 
-echo makelightdiv($mlab_data[0]->source[$number+1],12);
-?>
+			$count = 1;
+			for($i=count($a)-1;$i>=0;$i--){
+				$limit = 12/$a[$i];
+				for($j=0;$j<$a[$i];$j++){
+					echo makelightdiv($mlab_data[0]->source[$count++],$limit);
+				}
+			}
+
+			echo makelightdiv($mlab_data[0]->source[$number+1],12);
+		?>
 
 	
-	</div>
+</div>
 	
 
 
