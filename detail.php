@@ -146,8 +146,8 @@
 <div class="container" > 
 	<div class="row" style="margin-bottom: 200px;">
 		<div class="col-sm-12" id="front">
-			<div class="row">
-				<div class="col-sm-4" style="background-color: #a7ffeb;">
+			<div class="row" style="background-color: #eceff1;">
+				<div class="col-sm-4" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
@@ -155,7 +155,7 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="row">
-						<div class="col-sm-12" style="background-color: #eceff1">
+						<div class="col-sm-12" >
 							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
 						<div class="col-sm-12">
@@ -167,7 +167,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4" style="background-color: #a7ffeb;">
+				<div class="col-sm-4" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
