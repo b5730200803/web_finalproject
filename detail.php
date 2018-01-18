@@ -164,7 +164,6 @@
 							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
 						<div class="col-sm-12">
-							<?php echo makelightdiv($mlab_data[0]->source[0],12); ?>
 
 						</div>
 					</div>
@@ -194,7 +193,7 @@
 				}
 			}
 
-			echo makelightdiv($mlab_data[0]->source[$number+1],12);
+		
 		?>
 
 	
