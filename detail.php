@@ -33,7 +33,7 @@
       padding: 25px;
     }
   	#front{
-  		background-color:#b9f6ca;
+  		
   		height: 200px; 
   	}
  
