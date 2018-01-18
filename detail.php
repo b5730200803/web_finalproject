@@ -109,8 +109,7 @@
 	 				echo'<div class="col-12" >'.
 	 			}
 	 			else{
-	 				$size_room = 12/$count_room-2
-	 				echo'<div class="col-'.$size_room.'" >'.
+	 				echo'<div class="col-4" >'.
 	 			}
 	 				
 	 			.'<div class="panel panel-default">
