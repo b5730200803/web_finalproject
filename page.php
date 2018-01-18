@@ -55,13 +55,13 @@
      
         <form class="form-inline" action="/action_page.php">
 		  <div class="form-group" style="margin-left:10px;">
-		  	<input type="radio">
+		  	<input type="radio" name="NameHouse">
 			<label >ชื่อบ้าน:</label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <div class="form-group" style="margin-left:10px;">
-		    <input type="radio">
-			<label >รหัสบ้าน:</label>
+		    <input type="radio" name="NameID">
+			<label >หมายเลขบ้าน:</label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <button type="submit" class="btn btn-default">ค้นหา</button>
