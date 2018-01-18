@@ -77,6 +77,17 @@
   <div class="row">
    
 	<?php
+
+		echo '
+		<div class="col-12">
+			<div class="panel panel-success">
+				<div class="panel-heading ">ชื่อบ้าน :'.$mlab_obj->name.'</div>
+
+			</div>
+		</div>'
+
+
+
 	  echo $mlab_data[0]->id." ".$mlab_data[0]->name." ".$mlab_data[0]->password;
 	  	
 
