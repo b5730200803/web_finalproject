@@ -85,9 +85,8 @@
 			<div class="panel-footer text-center">
 				<form action="detail.php" method="post">
 
-					<input type="hidden" name="NameHome" value="'.$mlab_obj->id.'">
+					<input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
 					<input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
-					
 				</form>
 			</div>
 		  </div>

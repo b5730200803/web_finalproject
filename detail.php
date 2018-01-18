@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty');
+	$HomeID = $_POST["NameID"];
+	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
 	
 
@@ -56,7 +57,7 @@
         <form class="form-inline" action="/action_page.php">
 		  <div class="form-group" style="margin-left:10px;">
 		  	<input type="radio">
-			<label >ชื่อบ้าน:</label>
+			<label >ชื่อบ้าน: </label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <div class="form-group" style="margin-left:10px;">
@@ -76,7 +77,7 @@
   <div class="row">
    
 	<?php
-	  $_POST["Detail"];
+	  echo $mlab_data[0]->id." ".$mlab_data[0]->name." ".$mlab_data[0]->password;
 	  	
 
 	?>
