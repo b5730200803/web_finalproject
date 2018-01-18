@@ -114,7 +114,14 @@
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
 				</div>
-				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<img src="img/car.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
+						</div>
+						<div class="col-sm-12"></div>
+					</div>
+				</div>
 				<div class="col-sm-4">
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
 					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
