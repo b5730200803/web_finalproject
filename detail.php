@@ -81,14 +81,21 @@
 		echo '
 		<div class="col-12">
 			<div class="panel panel-success">
-				<div class="panel-heading ">ชื่อบ้าน :'.$mlab_data[0]->name.'</div>
+				<div class="panel-heading ">รายละเอียด </div>
+				<div class="panel-body">
+					หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
+					ชื่อบ้าน : '.$mlab_date[0]->name.'<br>
+					รหัสบ้าน : '.$mlab_data[0]->password.'<br>
+
+
+				</div>
 
 			</div>
 		</div>';
 
 
 
-	  echo $mlab_data[0]->id." ".$mlab_data[0]->name." ".$mlab_data[0]->password;
+	 
 	  	
 
 	?>
