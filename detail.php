@@ -107,10 +107,9 @@
 <div class="container">  
 	 <div class="row">
 	 	<div class="col-12" class="front-back" >
-	 		<div class="panel panel-success">
-				<div class="panel-heading ">รายละเอียด </div>
+	 		<div class="panel panel-default">
 				<div class="panel-body">
-					พะเหะพ้เด
+					<img src="img/light-open.png" class="img-responsive" style="width:100%" alt="Image">
 				</div>
 			</div>
 	 	</div>
