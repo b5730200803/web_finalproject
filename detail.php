@@ -153,15 +153,15 @@
 		<div class="col-sm-12" id="front">
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: left; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: left; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: left; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: left; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: left; " alt="Image" >
 				</div>
 				<div class="col-sm-4">
 					<div class="row">
 						<div class="col-sm-12">
-							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
+							<img src="img/car.png" class="img-responsive" style="width:100px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
 						<div class="col-sm-12">
 							<?php echo makelightdiv($mlab_data[0]->source[0],12); ?>
@@ -170,10 +170,10 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
-					<img src="img/tree.png" class="img-responsive" style="width:100px; margin:0px; float: right; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: right; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: right; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: right; " alt="Image" >
+					<img src="img/tree.png" class="img-responsive" style="width:50px; margin:0px; float: right; " alt="Image" >
 				</div>
 			</div>
 		</div>
