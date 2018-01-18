@@ -134,24 +134,7 @@
 	</div>
 
 	<div class="row">
-	 	<?php 
-	 		for($i=0;$i<$count_room;$i++){
-	 			if($i==0||$i==$count_room-1){
-	 				echo'<div class="col-sm-12" >';
-	 			}
-	 			else{
-	 				echo'<div class="col-sm-3" >';
-	 			}
-	 				
-	 			echo '<div class="panel panel-default">
-					<img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
-				</div>
-
-	 	
-	 		</div>';
-	 		}
-	 		
-	 	?>
+	
 	</div>
 	
 
