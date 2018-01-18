@@ -112,10 +112,7 @@
 
 	 			echo'	
 	 			<div class="panel panel-default">
-					<div class="panel-body">
-						'.$mlab_data[0]->source[0]->name.'
-						<img src="img/light-open.png" class="img-responsive " style="width:100px" alt="Image">
-					</div>
+					
 				</div>';
 
 
