@@ -38,10 +38,8 @@
 		
 		$text .= '<div class="panel panel-success">';
 		$text .= $light->name;
-		$text .= '<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>';
-		
+		$text .= '<div class="panel-body"><img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image"></div>';	
 		$text .= '</div>';
-		
 		$text .= '</div>';
 		return $text;
 	}
@@ -51,42 +49,39 @@
 
 ?>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-	  background: linear-gradient(90deg,RoyalBlue,DeepSkyBlue);
-	  border: 0px;
-	  padding:15px; 
-    }
- 
-     .jumbotron {
-      margin-bottom: 0;
-    }
-   
-  
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  	#front{
-  		
-  		height: 200px; 
-  	}
- 
+	<head>
+ 	<title>Bootstrap Example</title>
+  	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <style>
+	    .navbar {
+	      margin-bottom: 50px;
+	      border-radius: 0;
+		  background: linear-gradient(90deg,RoyalBlue,DeepSkyBlue);
+		  border: 0px;
+		  padding:15px; 
+	    }
+	 
+	     .jumbotron {
+	      margin-bottom: 0;
+	    }
+	   
 	  
-
-  </style>
-  	
-   
-</head>
+	    footer {
+	      background-color: #f2f2f2;
+	      padding: 25px;
+	    }
+	  	#front{
+	  		
+	  		height: 200px; 
+	  	}
+	  </style>
+	  	
+	   
+	</head>
 <body>
 
 <div class="jumbotron" >
@@ -164,7 +159,9 @@
 							<img src="img/car.png" class="img-responsive" style="width:200px; height: auto; margin-right:0px;" alt="Image" >
 						</div>
 						<div class="col-sm-12">
-
+							<div class="panel-body">
+								<img src="img/light-open.png" class="img-responsive" style="width:100px" alt="Image">
+							</div>
 						</div>
 					</div>
 				</div>
