@@ -108,7 +108,7 @@
 		<?php
 
 			foreach ($mlab_data[0]->source as $light) {
-				echo '<div class="col-sm-4">
+				echo '<div class="col-sm-4" style="margin:20px;">
 						<div class="panel panel-default " style="margin:0px;">
 							<div class="panel-heading">'.$light->name.'</div>
 							<div class="panel-body text-center">
