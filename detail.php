@@ -4,65 +4,13 @@
 	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
 
-	$number = count($mlab_data[0]->source);
-	$bound = 3;
+	
 
 
-
-	function set($number,$bound){
-		$a = array();
-		$i=0;
-		while($number-$bound>0){
-			$a[$i] = $bound;
-			$number = $number-$bound;
-			$i++;
-		}
-		$a[$i] = $number;
-		return $a;
-	}
-
-	function control($a,$index){
-		if($index==0)return $a;
-		if($a[$index-1]-$a[$index]>1){
-			$a[$index-1] -= 1;
-			$a[$index] += 1;
-			return control($a,$index-1);
-		}else{
-			return $a;
-		}
-
-	}
+	
 
 	function makelightdiv($light,$limit){
-		$text = '<div class="col-sm-'.$limit.'">';
 		
-		$text .= '<div class="panel panel-default " style="margin:0px;">
-					<div class="panel-heading">';
-				$text .= $light->name;
-			$text .='</div>';
-			$text .='<div class="panel-body text-center">
-						<img src="img/light-open.png"  style="width:100px" alt="Image"></div>'; 	
-
-			$text .= '</div>';
-			$text .= '<div class="panel-footer">หมายเลขหลอดไฟ : ';
-				$text .= $light->id;
-				$text .='<br>การเข้าถึง : ';
-				if($light->permission=="true"){
-					$text .= 'อนุญาติให้ลบหลอดไฟ';	
-				}
-				else{
-					$text .= 'ไม่อนุญาติให้ลบหลอดไฟ';	
-				}
-		
-				$text .= '<br>รายละเอียด : ';
-				if($light->detail=="working"){
-					$text .= 'กำลังทำงาน';	
-				}
-				else{
-					$text .= 'ปิดการใช้งาน';	
-				}
-			$text .= '</div>' ;
-		$text .= '</div>';
 		return $text;
 	}
 
@@ -167,22 +115,47 @@
 
 <div class="container" > 
 	
-	
+	<div class="row">
+		
 		<?php
-			$count = 0;
-			for($i=count($a)-1;$i>=0;$i--){
-				$limit = 12/$a[$i];
-				for($j=0;$j<$a[$i];$j++){
-					if($count%$bound==0){
-						echo '<div class="row">';
-					}
-					echo makelightdiv($mlab_data[0]->source[$count++],$limit);
-					if(($count-1)%$bound==$bound-1){
-						echo '</div>';
-					}
-				}
-			}		
+
+			foreach ($mlab_data[0]->source as $light) {
+				echo '<div class="col-sm-4">
+						<div class="panel panel-default " style="margin:0px;">
+							<div class="panel-heading">'.$light->name.'</div>
+							<div class="panel-body text-center">
+								<img src="img/light-open.png"  style="width:100px" alt="Image">
+							</div>
+							<div class="panel-footer">
+								หมายเลขหลอดไฟ : '. $light->id;
+
+								echo '<br>การเข้าถึง : ';
+								if($light->permission=="true"){
+									echo 'อนุญาติให้ลบหลอดไฟ';	
+								}
+								else{
+									echo 'ไม่อนุญาติให้ลบหลอดไฟ';	
+								}
+								
+								echo '<br>รายละเอียด : ';
+								if($light->detail=="working"){
+									echo 'กำลังทำงาน';	
+								}
+								else{
+									echo 'ปิดการใช้งาน';	
+								}
+
+								
+								echo '
+							</div> 
+					</div>';	
+			}
+
 		?>
+
+
+	</div>
+		
 
 	
 </div>
