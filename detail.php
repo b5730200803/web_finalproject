@@ -167,18 +167,23 @@
 
 <div class="container" > 
 	
-	<div class="row">
+	
 		<?php
 			$count = 0;
 			for($i=count($a)-1;$i>=0;$i--){
 				$limit = 12/$a[$i];
 				for($j=0;$j<$a[$i];$j++){
+					if($count%$bound==0){
+						echo '<div class="row">';
+					}
 					echo makelightdiv($mlab_data[0]->source[$count++],$limit);
+					if(($count-1)%$bound==$bound-1){
+						echo '</div>';
+					}
 				}
 			}		
 		?>
 
-	</div>
 	
 </div>
 	
