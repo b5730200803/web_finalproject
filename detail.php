@@ -4,8 +4,8 @@
 	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
 
-	$number = count($mlab_data[0]->source)-2;
-	$bound = 4;
+	$number = count($mlab_data[0]->source);
+	$bound = 3;
 
 
 
@@ -147,7 +147,7 @@
 	
 	<div class="row">
 		<?php
-			$count = 1;
+			$count = 0;
 			for($i=count($a)-1;$i>=0;$i--){
 				$limit = 12/$a[$i];
 				for($j=0;$j<$a[$i];$j++){
