@@ -48,7 +48,7 @@
 		$text .= $light->id;
 		$text .='<br>การเข้าถึง : ';
 		$text .= $light->permission;
-		$rext .= '<br>รายละเอียด : ';
+		$text .= '<br>รายละเอียด : ';
 		$text .= $light->detail;
 		$text .= '</div>' ;
 		$text .= '</div>';
