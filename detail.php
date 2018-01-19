@@ -55,7 +55,12 @@
 		}
 		
 		$text .= '<br>รายละเอียด : ';
-		$text .= $light->detail;
+		if($light->detail=="working"){
+			$text .= 'กำลังทำงาน';	
+		}
+		else{
+			$text .= 'ปิดการใช้งาน';	
+		}
 		$text .= '</div>' ;
 		$text .= '</div>';
 		return $text;
