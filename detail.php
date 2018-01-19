@@ -36,32 +36,32 @@
 	function makelightdiv($light,$limit){
 		$text = '<div class="col-sm-'.$limit.'">';
 		
-		$text .= '<div class="panel panel-default ">
+		$text .= '<div class="panel panel-default " style="margin:0px;">
 					<div class="panel-heading">';
 				$text .= $light->name;
-		$text .='</div>';
-		$text .='<div class="panel-body text-center">
-					<img src="img/light-open.png"  style="width:100px" alt="Image"></div>'; 	
+			$text .='</div>';
+			$text .='<div class="panel-body text-center">
+						<img src="img/light-open.png"  style="width:100px" alt="Image"></div>'; 	
 
-		$text .= '</div>';
-		$text .= '<div class="panel-footer">หมายเลขหลอดไฟ : ';
-		$text .= $light->id;
-		$text .='<br>การเข้าถึง : ';
-		if($light->permission=="true"){
-			$text .= 'อนุญาติให้ลบหลอดไฟ';	
-		}
-		else{
-			$text .= 'ไม่อนุญาติให้ลบหลอดไฟ';	
-		}
+			$text .= '</div>';
+			$text .= '<div class="panel-footer">หมายเลขหลอดไฟ : ';
+				$text .= $light->id;
+				$text .='<br>การเข้าถึง : ';
+				if($light->permission=="true"){
+					$text .= 'อนุญาติให้ลบหลอดไฟ';	
+				}
+				else{
+					$text .= 'ไม่อนุญาติให้ลบหลอดไฟ';	
+				}
 		
-		$text .= '<br>รายละเอียด : ';
-		if($light->detail=="working"){
-			$text .= 'กำลังทำงาน';	
-		}
-		else{
-			$text .= 'ปิดการใช้งาน';	
-		}
-		$text .= '</div>' ;
+				$text .= '<br>รายละเอียด : ';
+				if($light->detail=="working"){
+					$text .= 'กำลังทำงาน';	
+				}
+				else{
+					$text .= 'ปิดการใช้งาน';	
+				}
+			$text .= '</div>' ;
 		$text .= '</div>';
 		return $text;
 	}
