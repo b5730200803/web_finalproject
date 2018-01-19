@@ -47,7 +47,13 @@
 		$text .= '<div class="panel-footer">หมายเลขหลอดไฟ : ';
 		$text .= $light->id;
 		$text .='<br>การเข้าถึง : ';
-		$text .= $light->permission;
+		if($light->permission=="true"){
+			$text .= 'อนุญาติให้ลบหลอดไฟ';	
+		}
+		else{
+			$text .= 'ไม่อนุญาติให้ลบหลอดไฟ';	
+		}
+		
 		$text .= '<br>รายละเอียด : ';
 		$text .= $light->detail;
 		$text .= '</div>' ;
