@@ -50,7 +50,7 @@
 		$text .= $light->permission;
 		$rext .= '<br>รายละเอียด : ';
 		$text .= $light->detail;
-		$text .= '</div>'
+		$text .= '</div>' ;
 		$text .= '</div>';
 		return $text;
 	}
