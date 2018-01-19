@@ -36,7 +36,7 @@
 	function makelightdiv($light,$limit){
 		$text = '<div class="col-sm-'.$limit.'">';
 		
-		$text .= '<div class="panel panel-info ">
+		$text .= '<div class="panel panel-default ">
 					<div class="panel-heading">';
 				$text .= $light->name;
 		$text .='</div>';
