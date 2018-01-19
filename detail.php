@@ -40,8 +40,17 @@
 					<div class="panel-heading">';
 				$text .= $light->name;
 		$text .='</div>';
-		$text .= '<div class="panel-body text-center"><img src="img/light-open.png"  style="width:100px" alt="Image"></div>';	
+		$text .='<div class="panel-body text-center">
+					<img src="img/light-open.png"  style="width:100px" alt="Image"></div>'; 	
+
 		$text .= '</div>';
+		$text .= '<div class="panel-footer">หมายเลขหลอดไฟ : ';
+		$text .= $light->id;
+		$text .='<br>การเข้าถึง : ';
+		$text .= $light->permission;
+		$rext .= '<br>รายละเอียด : ';
+		$text .= $light->detail;
+		$text .= '</div>'
 		$text .= '</div>';
 		return $text;
 	}
