@@ -59,7 +59,7 @@
         <form class="form-inline" action="/action_page.php">
 		  <div class="form-group" style="margin-left:10px;">
 		  	<input type="radio" name="NameHouse">
-			<label >ชื่อบ้าน: </label>
+			<label >ชื่อบ้านผ: </label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <div class="form-group" style="margin-left:10px;">
