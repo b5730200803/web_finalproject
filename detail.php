@@ -116,7 +116,7 @@
 							</div>
 							<div class="panel-footer">
 								';
-								echo '<br>*หมายเหตุ  ';
+								echo '<br>หมายเหตุ  ';
 								if($light->permission=="true"){
 									echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>';	
 								}
