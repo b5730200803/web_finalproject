@@ -121,17 +121,9 @@
 									echo 'อนุญาติให้ลบหลอดไฟ';	
 								}
 								else{
-									echo 'ไม่อนุญาติให้ลบหลอดไฟ';	
+									echo '<font color="red">*หมายเหตุ ไม่อนุญาติให้ลบหลอดไฟ </font>';	
 								}
-								
-								echo '<br>สถานะ : ';
-								if($light->detail=="working"){
-									echo 'พร้อมใช้งาน';	
-								}
-								else{
-									echo 'ไม่พร้อมใช้งาน';	
-								}
-								echo '
+								echo'
 								</div>
 							</div> 
 					</div>';	
