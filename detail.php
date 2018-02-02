@@ -115,7 +115,8 @@
 								<img src="img/light-open.png"  style="width:100px" alt="Image">
 							</div>
 							<div class="panel-footer">
-								'.echo '<br>การเข้าถึง : ';
+								';
+								echo '<br>การเข้าถึง : ';
 								if($light->permission=="true"){
 									echo 'อนุญาติให้ลบหลอดไฟ';	
 								}
