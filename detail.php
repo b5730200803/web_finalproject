@@ -116,12 +116,12 @@
 							</div>
 							<div class="panel-footer">
 								';
-								echo '<br>การเข้าถึง : ';
+								echo '<br>*หมายเหตุ  ';
 								if($light->permission=="true"){
-									echo 'อนุญาติให้ลบหลอดไฟ';	
+									echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>';	
 								}
 								else{
-									echo '<font color="red">*หมายเหตุ ไม่อนุญาติให้ลบหลอดไฟ </font>';	
+									echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';	
 								}
 								echo'
 								</div>
