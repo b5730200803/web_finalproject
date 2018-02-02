@@ -54,17 +54,21 @@
       <ul class="nav navbar-nav navbar-right">
      
         <form class="form-inline" action="/action_page.php">
+		  
 		  <div class="form-group" style="margin-left:10px;">
 		  	<input type="radio" name="NameHouse">
 			<label >ชื่อบ้าน:</label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <div class="form-group" style="margin-left:10px;">
-		    <input type="radio" name="NameID">
+		    <input type="radio" name="IdHouse">
 			<label >หมายเลขบ้าน:</label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <button type="submit" class="btn btn-default">ค้นหา</button>
+
+
+
 		</form>
       </ul>
       
