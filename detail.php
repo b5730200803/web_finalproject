@@ -59,12 +59,12 @@
         <form class="form-inline" action="/action_page.php">
 		  <div class="form-group" style="margin-left:10px;">
 		  	<input type="radio" name="NameHouse">
-			<label >ชื่อบ้าน: </label>
+			<label >ชื่อบ้านหรือหมายเลขบ้าน: </label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <div class="form-group" style="margin-left:10px;">
 		    <input type="radio" name="Nameid">
-			<label >หมายเลขบ้าน:</label>
+			<label >รหัสบ้าน:</label>
 			<input type="text" class="form-control" >
 		  </div>
 		  <button type="submit" class="btn btn-default">ค้นหา</button>
@@ -130,8 +130,6 @@
 								else{
 									echo 'ไม่พร้อมใช้งาน';	
 								}
-
-								
 								echo '
 								</div>
 							</div> 
@@ -139,8 +137,7 @@
 			}
 
 		?>
-
-
+		
 	</div>
 		
 
