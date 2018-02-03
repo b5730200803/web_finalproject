@@ -109,7 +109,7 @@
 
 			foreach ($mlab_data[0]->source as $light) {
 				echo '<div class="col-sm-4" style="margin-bottom:20px;">
-						<div class="panel panel-default " style="margin:0px;">
+						<div class="panel panel-info " style="margin:0px;">
 							<div class="panel-heading">'.$light->name.'</div>
 							<div class="panel-body text-center">
 								<img src="img/light-open.png"  style="width:100px" alt="Image">
