@@ -82,15 +82,8 @@
 	<?php
 	  	
 	  	foreach($mlab_data as $mlab_obj) {
-
-	  	 $a=array("success","info","warning","danger");
-		 $random=array_rand($a);
 		 echo '<div class="col-sm-4"> 
-		  <div class="panel panel-';
-
-		  echo $random;
-
-		  echo '">
+		  <div class="panel panel-success">
 			<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
 			<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 			<div class="panel-footer text-center">
