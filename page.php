@@ -84,7 +84,7 @@
 	  	foreach($mlab_data as $mlab_obj) {
 
 	  	 $a=array("success","info","warning","danger");
-		 $random=array_rand($a);
+		 $random=array_rand($a,1);
 		 echo '<div class="col-sm-4"> 
 		  <div class="panel panel-'.$random.'">
 			
