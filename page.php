@@ -22,8 +22,8 @@
 	  padding:15px; 
     }
  
-     .jumbotron {
-      margin-bottom: 0;
+    .jumbotron {
+      margin-bottom: 50px;
       background-image: url(img/blue.jpg);
       padding-top:0px; 
     }
