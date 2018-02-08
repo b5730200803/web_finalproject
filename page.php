@@ -17,7 +17,6 @@
     .navbar {
       margin-bottom: 50px;
       border-radius: 0;
-	  background: linear-gradient(90deg,RoyalBlue,DeepSkyBlue);
 	  border: 0px;
 	  padding:15px; 
     }
