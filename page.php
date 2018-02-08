@@ -83,31 +83,31 @@
 </div>
 
 
+<div style="background-color: rgb(224, 244, 255);">  
+	<div class="container">    
+	  <div class="row">  
+		<?php
+		  	foreach($mlab_data as $mlab_obj) {
+			 echo '<div class="col-sm-4"> 
+			  <div class="panel panel-success">
+				<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
+				<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
+				<div class="panel-footer text-center">
+					<form action="detail.php" method="post">
+						<input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
+						<input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
+					</form>
+				</div>
+			  </div>
+			</div>';
+			}
+		  	
+		?>
 
-<div class="container" style="background-color:rgba(224, 244, 255,1.00);">    
-  <div class="row">  
-	<?php
-	  	foreach($mlab_data as $mlab_obj) {
-		 echo '<div class="col-sm-4"> 
-		  <div class="panel panel-success">
-			<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
-			<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
-			<div class="panel-footer text-center">
-				<form action="detail.php" method="post">
-					<input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
-					<input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
-				</form>
-			</div>
-		  </div>
-		</div>';
-		}
-	  	
-	?>
 
-
-  </div>
-</div><br>
-
+	  </div>
+	</div><br>
+</div>
 
 
 <footer class="container-fluid text-center">
