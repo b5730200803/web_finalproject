@@ -26,7 +26,7 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-image: url(img/blue-bot.png);
+      background-image: url(img/blue.png);
       padding-top:0px; 
     }
     fontHead{
