@@ -69,9 +69,6 @@
 				<input type="text" class="form-control" >
 			  </div>
 			  <button type="submit" class="btn btn-default">ค้นหา</button>
-
-
-
 			</form>
 	      </ul>
 	      
@@ -83,16 +80,13 @@
     <h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
     <p>Remote Lighting Control via LINE Chatbot</p>
   </div>
-
 </div>
 
 
 
-<div class="container">    
-  <div class="row">
-   
+<div class="container" style="background-color:rgba(224, 244, 255,1.00);">    
+  <div class="row">  
 	<?php
-	  	
 	  	foreach($mlab_data as $mlab_obj) {
 		 echo '<div class="col-sm-4"> 
 		  <div class="panel panel-success">
@@ -100,20 +94,14 @@
 			<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 			<div class="panel-footer text-center">
 				<form action="detail.php" method="post">
-
 					<input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
 					<input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
 				</form>
 			</div>
 		  </div>
 		</div>';
-
-
-
-
-	}
+		}
 	  	
-
 	?>
 
 
