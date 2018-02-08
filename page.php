@@ -72,7 +72,7 @@
 	</nav>
 	<div class="container ">
 		<div class="row">
-			<div class="col-lg-8" style="padding-top:50px;">
+			<div class="col-xs-8" style="padding-top:50px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
@@ -86,7 +86,7 @@
 	  <div class="row">  
 		<?php
 		  	foreach($mlab_data as $mlab_obj) {
-			 echo '<div class="col-sm-4"> 
+			 echo '<div class="col-xs-4"> 
 			  <div class="panel panel-success">
 				<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
 				<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
