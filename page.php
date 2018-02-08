@@ -21,6 +21,9 @@
  			height: auto;
  			text-align: center;
   		}
+  		#textHead{
+  			padding-top:0px; 
+  		}
   	}
 
     .navbar {
@@ -56,7 +59,7 @@
 			<div class="col-lg-4" style="padding:20px;">
 				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
 			</div>
-			<div class="col-lg-8" style="padding-top:100px;">
+			<div id="textHead" class="col-lg-8" style="padding-top:100px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
