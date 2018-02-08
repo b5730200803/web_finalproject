@@ -46,9 +46,7 @@
     <h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
     <p>Remote Lighting Control via LINE Chatbot</p>
   </div>
-</div>
-
-<nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" style="padding: 10px;">
      
@@ -76,6 +74,9 @@
     </div>
   </div>
 </nav>
+</div>
+
+
 
 <div class="container">    
   <div class="row">
