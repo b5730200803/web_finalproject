@@ -32,7 +32,7 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-image: url(img/chatbots11.png);
+      background-image: url(img/BG.png);
       padding-top:0px; 
     }
    
