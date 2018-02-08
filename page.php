@@ -30,7 +30,7 @@
       padding-top:0px; 
     }
     fontHead{
-    	font-size: 40px;
+    	font-size: 38px;
     }
 
   
