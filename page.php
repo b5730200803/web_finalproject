@@ -80,9 +80,10 @@
 
 
 <div style="background-color: #f2f2f2; padding: 50px;">  
-	<div class="container">    
-	  <div class="row">  
-		<?php
+	<div class="container"> 
+	  <?php 
+	  	echo '<div class="row">';  
+		
 		  	foreach($mlab_data as $mlab_obj) {
 			 echo '<div class="col-xs-4"> 
 			  <div class="panel panel-success">
@@ -98,9 +99,8 @@
 			</div>';
 			}
 		  	
-		?>
-
-	  </div>
+	  	echo '</div>';
+	  ?>
 	</div><br>
 </div>
 
