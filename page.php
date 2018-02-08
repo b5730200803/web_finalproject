@@ -46,7 +46,7 @@
 
 	<div class="container ">
 		<div class="row">
-			<div class="col-lg-8" >
+			<div class="col-lg-8" style="padding:20px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
