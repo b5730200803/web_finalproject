@@ -77,8 +77,8 @@
 	</nav>
 	<div class="container ">
 		
-			<div class="col-lg-4 text-center" style="width: 20%; height: auto">
-				<img src="img/EN-limites-chatbot.png" >
+			<div class="col-lg-4 text-center" >
+				<img src="img/EN-limites-chatbot.png" width="50%" height="auto" >
 			</div>
 			<div class="col-lg-8">
 				<h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
