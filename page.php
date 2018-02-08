@@ -83,7 +83,7 @@
 </div>
 
 
-<div style="background-color: rgb(224, 244, 255); padding: 50px;">  
+<div style="background-color: rgb(204, 204, 204); padding: 50px;">  
 	<div class="container">    
 	  <div class="row">  
 		<?php
