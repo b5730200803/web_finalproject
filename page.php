@@ -77,7 +77,7 @@
 	</nav>
 	<div class="container ">
 		<div class="row">
-			<div class="col-lg-4 text-center">
+			<div class="col-lg-4 text-center" style="width: 60%; height: auto">
 				<img src="img/EN-limites-chatbot.png" >
 			</div>
 			<div class="col-lg-8">
