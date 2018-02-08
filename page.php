@@ -9,20 +9,13 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
 
-  	@media only screen and (max-width: 320px) {
-
-	   body { 
-	      font-size: 2em; 
-	   }
-
-
-	}
+  
     .navbar {
       margin-bottom: 0px;
       border-radius: 0;
@@ -78,7 +71,7 @@
 				<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >
 			</div>
 			<div class="col-lg-8" style="padding-top:50px;">
-				<h2 class="display-2">การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
+				<h2 >การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 		</div>
