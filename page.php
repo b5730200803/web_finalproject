@@ -31,7 +31,7 @@
     }
  
     .jumbotron {
-      margin-bottom: 50px;
+    
       background-image: url(img/blue.jpg);
       padding-top:0px; 
     }
@@ -83,7 +83,7 @@
 </div>
 
 
-<div style="background-color: rgb(224, 244, 255);">  
+<div style="background-color: rgb(224, 244, 255); padding: 50px;">  
 	<div class="container">    
 	  <div class="row">  
 		<?php
