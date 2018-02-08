@@ -36,11 +36,7 @@
       padding-top:0px; 
     }
    
-  
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+
   
 	  
 
@@ -89,7 +85,7 @@
 </div>
 
 
-<div style="background-color: rgb(204, 204, 204); padding: 50px;">  
+<div style="background-color: #f2f2f2; padding: 50px;">  
 	<div class="container">    
 	  <div class="row">  
 		<?php
@@ -116,9 +112,7 @@
 </div>
 
 
-<footer class="container-fluid text-center">
- 
-</footer>
+
 
 </body>
 </html>
