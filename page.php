@@ -41,39 +41,40 @@
 <body>
 
 <div class="jumbotron" >
+    <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="collapse navbar-collapse" style="padding: 10px;">
+	     
+	      <ul class="nav navbar-nav navbar-right">
+	     
+	        <form class="form-inline" action="/action_page.php">
+			  
+			  <div class="form-group" style="margin-left:10px;">
+			  	<input type="radio" name="NameHouse">
+				<label >ชื่อบ้านหรือหมายเลขบ้าน:</label>
+				<input type="text" class="form-control" >
+			  </div>
+			  <div class="form-group" style="margin-left:10px;">
+			    <input type="radio" name="IdHouse">
+				<label >รหัสบ้าน:</label>
+				<input type="text" class="form-control" >
+			  </div>
+			  <button type="submit" class="btn btn-default">ค้นหา</button>
+
+
+
+			</form>
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>
   <div class="container text-center">
     <img src="img/ydosrcjyfrwospuioljt.png" style="width: 50% ; height: auto;">
     <h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
     <p>Remote Lighting Control via LINE Chatbot</p>
   </div>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" style="padding: 10px;">
-     
-      <ul class="nav navbar-nav navbar-right">
-     
-        <form class="form-inline" action="/action_page.php">
-		  
-		  <div class="form-group" style="margin-left:10px;">
-		  	<input type="radio" name="NameHouse">
-			<label >ชื่อบ้านหรือหมายเลขบ้าน:</label>
-			<input type="text" class="form-control" >
-		  </div>
-		  <div class="form-group" style="margin-left:10px;">
-		    <input type="radio" name="IdHouse">
-			<label >รหัสบ้าน:</label>
-			<input type="text" class="form-control" >
-		  </div>
-		  <button type="submit" class="btn btn-default">ค้นหา</button>
 
-
-
-		</form>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
 </div>
 
 
