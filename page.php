@@ -15,7 +15,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-
+  	@media only screen and (max-width: 500px) {
+  		#ImageLogo{
+  			width: 50%;
+  			height: auto;
+  		}
+  	}
 
     .navbar {
       margin-bottom: 0px;
@@ -51,7 +56,7 @@
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 			<div class="col-lg-4" style="padding:20px;">
-				<img src="img/EN-limites-chatbot.png" width="120%" height="auto">
+				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
 			</div>
 		</div>
 	</div>
