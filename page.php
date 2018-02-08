@@ -32,7 +32,7 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-image: url(img/BG.png);
+      background-image: url(img/blue.jpg);
       padding-top:0px; 
     }
    
