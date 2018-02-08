@@ -81,7 +81,7 @@
 				<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >
 			</div>
 			<div class="col-lg-8" style="padding-top:50px;">
-				<h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
+				<h1>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h1>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 		</div>
