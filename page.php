@@ -9,8 +9,8 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-  <link href="https://getbootstrap.com/docs/3.3/examples/non-responsive/non-responsive.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -70,7 +70,7 @@
 	</nav>
 	<div class="container ">
 		<div class="row">
-			<div class="col-xs-8" style="padding-top:50px;">
+			<div class="col-lg-8" style="padding-top:50px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
