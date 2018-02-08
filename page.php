@@ -75,11 +75,15 @@
 	    </div>
 	  </div>
 	</nav>
-  <div class="container text-center">
-    <img src="img/ydosrcjyfrwospuioljt.png" style="width: 50% ; height: auto;">
-    <h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
-    <p>Remote Lighting Control via LINE Chatbot</p>
-  </div>
+	<div class="container text-center">
+		<div class="col-lg-6">
+			<img src="img/ydosrcjyfrwospuioljt.png" style="width: 50% ; height: auto;">
+		</div>
+		<div  class="col-lg-6">
+			<h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
+			<p>Remote Lighting Control via LINE Chatbot</p>
+		</div>
+	</div>
 </div>
 
 
