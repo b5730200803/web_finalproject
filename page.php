@@ -26,7 +26,7 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-image: url(img/blue.jpg);
+      background-color: #f2f2f2
       padding-top:0px; 
     }
     fontHead{
@@ -70,7 +70,7 @@
 	<div class="container ">
 		<div class="row">
 			<div class="col-lg-4 text-center" >
-				<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >
+				<!--<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >-->
 			</div>
 			<div class="col-lg-8" style="padding-top:50px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
