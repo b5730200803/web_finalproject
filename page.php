@@ -43,7 +43,7 @@
     	font-size: 38px;
     }
     #textHead{
-    	padding-top:100px;
+    	padding-top:30px;
     }
 
   
