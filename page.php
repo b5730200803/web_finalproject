@@ -29,7 +29,9 @@
       background-image: url(img/blue.jpg);
       padding-top:0px; 
     }
-   
+    fontHead{
+    	font-size: 40px;
+    }
 
   
 	  
@@ -71,7 +73,7 @@
 				<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >
 			</div>
 			<div class="col-lg-8" style="padding-top:50px;">
-				<h2 >การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
+				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 		</div>
