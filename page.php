@@ -51,7 +51,7 @@
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 			<div class="col-lg-4" style="padding:20px;">
-				<img src="img/EN-limites-chatbot.pnh" width="200px" height="auto">
+				<img src="img/EN-limites-chatbot.png" width="200px" height="auto">
 			</div>
 		</div>
 	</div>
