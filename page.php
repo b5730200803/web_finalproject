@@ -82,9 +82,9 @@
 <div style="background-color: #f2f2f2; padding: 50px;">  
 	<div class="container"> 
 	  <?php 
-	  	echo '<div class="row">';  
-		
+	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
+			 if($count%3==0)echo '<div class="row">';
 			 echo '<div class="col-xs-4"> 
 			  <div class="panel panel-success">
 				<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
@@ -97,9 +97,10 @@
 				</div>
 			  </div>
 			</div>';
+			if($count%3==2)echo '</div>';
+			$count++;
 			}
 		  	
-	  	echo '</div>';
 	  ?>
 	</div><br>
 </div>
