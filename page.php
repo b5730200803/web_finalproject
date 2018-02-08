@@ -17,8 +17,9 @@
   <style>
   	@media only screen and (max-width: 1200px) {
   		#ImageLogo{
-  			width: 50%;
-  			height: auto;
+  			width: 80%;
+ 			height: auto;
+ 			text-align: center;
   		}
   	}
 
