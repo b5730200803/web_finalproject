@@ -43,7 +43,21 @@
 <body>
 
 <div class="jumbotron" >
-    <nav class="navbar navbar-inverse">
+
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-8" >
+				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
+				<p>Remote Lighting Control via LINE Chatbot</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div style="background-color: #f2f2f2; padding: 50px;">  
+	<div class="container">
+		 <nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="collapse navbar-collapse" style="padding: 10px;">
 	     
@@ -51,7 +65,7 @@
 	     
 	        <form class="form-inline" action="/action_page.php">
 			  
-			  <!--<div class="form-group" style="margin-left:10px;">
+			  <div class="form-group" style="margin-left:10px;">
 			  	<input type="radio" name="NameHouse">
 				<label >ชื่อบ้านหรือหมายเลขบ้าน:</label>
 				<input type="text" class="form-control" >
@@ -62,26 +76,13 @@
 				<input type="text" class="form-control" >
 			  </div>
 			  <button type="submit" class="btn btn-default">ค้นหา</button>
-			-->
+			
 			</form>
 	      </ul>
 	      
 	    </div>
 	  </div>
 	</nav>
-	<div class="container ">
-		<div class="row">
-			<div class="col-lg-8" style="padding-top:50px;">
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
-				<p>Remote Lighting Control via LINE Chatbot</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div style="background-color: #f2f2f2; padding: 50px;">  
-	<div class="container"> 
 	  <?php 
 	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
