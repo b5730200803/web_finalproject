@@ -25,6 +25,7 @@
      .jumbotron {
       margin-bottom: 0;
       background-image: url(img/blue.jpg);
+      padding-top:0px; 
     }
    
   
