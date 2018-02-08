@@ -69,9 +69,7 @@
 	</nav>
 	<div class="container ">
 		<div class="row">
-			<div class="col-lg-4 text-center" >
-				<!--<img src="img/EN-limites-chatbot.png" width="100%" height="auto" >-->
-			</div>
+			
 			<div class="col-lg-8" style="padding-top:50px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
