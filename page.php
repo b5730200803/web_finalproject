@@ -26,7 +26,7 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-color: #f2f2f2
+      background-image: url(img/blue-bot.png);
       padding-top:0px; 
     }
     fontHead{
@@ -69,7 +69,6 @@
 	</nav>
 	<div class="container ">
 		<div class="row">
-			
 			<div class="col-lg-8" style="padding-top:50px;">
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
 				<p>Remote Lighting Control via LINE Chatbot</p>
