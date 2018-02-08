@@ -15,7 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     .navbar {
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       border-radius: 0;
 	  background-color:rgba(255,255,255,0.00);
 	  border: 0px;
