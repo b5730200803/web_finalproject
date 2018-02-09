@@ -68,75 +68,72 @@
 </div>
 
 
-
-<div class="container">    
-  <div class="row">
- 
-	<?php
-		$count_room = count($mlab_data[0]->source);
-		echo '
-		<div class="col-sm-12">
-			<div class="panel panel-success">
-				<div class="panel-heading ">รายละเอียด </div>
-				<div class="panel-body">
-					หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
-					ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
-					รหัสบ้าน : '.$mlab_data[0]->password.'<br>
-					จำนวนห้อง : '.$count_room.'
-				</div>
-			</div>
-		</div>';
+<div style="padding: 50px;">
+	<div class="container">    
+	  <div class="row">
 	 
-	?>
-  </div>
-</div>
-
-
-<br>
-
-
-<div class="container" > 
-	
-	<div class="row">
-		
 		<?php
-
-			foreach ($mlab_data[0]->source as $light) {
-				echo '<div class="col-sm-4" style="margin-bottom:20px;">
-						<div class="panel panel-info " style="margin:0px;">
-							<div class="panel-heading">'.$light->name.'</div>
-							<div class="panel-body text-center">';
-								if($light->status == "on" ){
-									echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
-								}
-								else{
-									echo '<img src="img/light-close.png"  style="width:100px" alt="Image">';
-								}
-					  
-					  echo '</div>
-							<div class="panel-footer">
-								';
-								echo 'หมายเหตุ  ';
-								if($light->permission=="true"){
-									echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>';	
-								}
-								else{
-									echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';	
-								}
-								echo'
-								</div>
-							</div> 
-					</div>';	
-			}
-
+			$count_room = count($mlab_data[0]->source);
+			echo '
+			<div class="col-sm-12">
+				<div class="panel panel-success">
+					<div class="panel-heading ">รายละเอียด </div>
+					<div class="panel-body">
+						หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
+						ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
+						รหัสบ้าน : '.$mlab_data[0]->password.'<br>
+						จำนวนห้อง : '.$count_room.'
+					</div>
+				</div>
+			</div>';
+		 
 		?>
-		
+	  </div>
 	</div>
-		
 
-	
+
+	<br>
+
+
+	<div class="container" > 
+		<div class="row">
+			
+			<?php
+
+				foreach ($mlab_data[0]->source as $light) {
+					echo '<div class="col-sm-4" style="margin-bottom:20px;">
+							<div class="panel panel-info " style="margin:0px;">
+								<div class="panel-heading">'.$light->name.'</div>
+								<div class="panel-body text-center">';
+									if($light->status == "on" ){
+										echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
+									}
+									else{
+										echo '<img src="img/light-close.png"  style="width:100px" alt="Image">';
+									}
+						  
+						  echo '</div>
+								<div class="panel-footer">
+									';
+									echo 'หมายเหตุ  ';
+									if($light->permission=="true"){
+										echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>';	
+									}
+									else{
+										echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';	
+									}
+									echo'
+									</div>
+								</div> 
+						</div>';	
+				}
+
+			?>
+			
+		</div>	
+	</div>
+
 </div>
-	
 
 
 
