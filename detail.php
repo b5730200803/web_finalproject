@@ -71,34 +71,7 @@
 
 <div class="container">    
   <div class="row">
-
-  	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="collapse navbar-collapse" style="padding: 10px;">
-	     
-	      <ul class="nav navbar-nav navbar-right">
-	     
-	        <form class="form-inline" action="/action_page.php">
-			  <div class="form-group" style="margin-left:10px;">
-			  	<input type="radio" name="NameHouse">
-				<label >ชื่อบ้าน: </label>
-				<input type="text" class="form-control" >
-			  </div>
-			  <div class="form-group" style="margin-left:10px;">
-			    <input type="radio" name="IdHouse">
-				<label >หมายเลขบ้าน: </label>
-				<input type="text" class="form-control" >
-			  </div>
-			  <button type="submit" class="btn btn-default">ค้นหา</button>
-			</form>
-	      </ul>
-	      
-	    </div>
-	  </div>
-	</nav>
-
-  	
-   
+ 
 	<?php
 		$count_room = count($mlab_data[0]->source);
 		echo '
