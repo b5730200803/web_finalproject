@@ -41,7 +41,7 @@
 		#ImageLogo{
 			width: 80%;
 			height: auto;
-			text-align: center;
+			img {display:block;margin:0 auto;}
 		}
 		#textHead{
 			padding-top:10px; 
