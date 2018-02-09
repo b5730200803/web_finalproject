@@ -39,7 +39,7 @@
 
   	@media only screen and (max-width: 900px) {
 		#ImageLogo{
-			width: 80%;
+			width: 100%;
 			height: auto;
 			
 		}
