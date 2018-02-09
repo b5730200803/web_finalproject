@@ -16,25 +16,35 @@
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  <style>
 	    .navbar {
-	      margin-bottom: 50px;
+	      margin-bottom: 0px;
 	      border-radius: 0;
-		  background: linear-gradient(90deg,RoyalBlue,DeepSkyBlue);
+		  background-color:rgba(255,255,255,0.00);
 		  border: 0px;
 		  padding:15px; 
 	    }
 	 
-	     .jumbotron {
-	      margin-bottom: 0;
+	    .jumbotron {
+	      margin-bottom: 0px;
+	      background-image: url(img/blue.jpg);
+	      padding-top:0px; 
 	    }
-	   
-	  
-	    footer {
-	      background-color: #f2f2f2;
-	      padding: 25px;
+	    fontHead{
+	    	font-size: 39px;
 	    }
-	  	#front{
-	  		
-	  		height: 200px; 
+	    #textHead{
+	    	padding-top:100px;
+	    }
+
+	  	@media only screen and (max-width: 900px) {
+			#ImageLogo{
+				width: 80%;
+				height: auto;
+				
+			}
+			#textHead{
+				padding-top:10px; 
+			}
+			img {display:block;margin:0 auto};
 	  	}
 	  </style>
 	  	
@@ -43,40 +53,51 @@
 <body>
 
 <div class="jumbotron" >
-  <div class="container text-center">
-    <img src="img/ydosrcjyfrwospuioljt.png" style="width: 50% ; height: auto;">
-    <h2>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</h2>      
-    <p>Remote Lighting Control via LINE Chatbot</p>
-  </div>
+	<div class="container ">
+		<div class="row">
+			
+			<div class="col-lg-4" style="padding:20px;">
+				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
+			</div>
+			<div id="textHead" class="col-lg-8" >
+				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
+				<p>Remote Lighting Control via LINE Chatbot</p>
+			</div>
+		</div>
+	</div>
 </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" style="padding: 10px;">
-     
-      <ul class="nav navbar-nav navbar-right">
-     
-        <form class="form-inline" action="/action_page.php">
-		  <div class="form-group" style="margin-left:10px;">
-		  	<input type="radio" name="NameHouse">
-			<label >ชื่อบ้าน: </label>
-			<input type="text" class="form-control" >
-		  </div>
-		  <div class="form-group" style="margin-left:10px;">
-		    <input type="radio" name="IdHouse">
-			<label >หมายเลขบ้าน: </label>
-			<input type="text" class="form-control" >
-		  </div>
-		  <button type="submit" class="btn btn-default">ค้นหา</button>
-		</form>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
+
 
 <div class="container">    
   <div class="row">
+
+  	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="collapse navbar-collapse" style="padding: 10px;">
+	     
+	      <ul class="nav navbar-nav navbar-right">
+	     
+	        <form class="form-inline" action="/action_page.php">
+			  <div class="form-group" style="margin-left:10px;">
+			  	<input type="radio" name="NameHouse">
+				<label >ชื่อบ้าน: </label>
+				<input type="text" class="form-control" >
+			  </div>
+			  <div class="form-group" style="margin-left:10px;">
+			    <input type="radio" name="IdHouse">
+				<label >หมายเลขบ้าน: </label>
+				<input type="text" class="form-control" >
+			  </div>
+			  <button type="submit" class="btn btn-default">ค้นหา</button>
+			</form>
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>
+
+  	
    
 	<?php
 		$count_room = count($mlab_data[0]->source);
