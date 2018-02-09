@@ -15,16 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  	@media only screen and (max-width: 900px) {
-  		#ImageLogo{
-  			width: 80%;
- 			height: auto;
- 			text-align: center;
-  		}
-  		#textHead{
-  			padding-top:10px; 
-  		}
-  	}
+
 
     .navbar {
       margin-bottom: 0px;
@@ -46,6 +37,16 @@
     	padding-top:100px;
     }
 
+  	@media only screen and (max-width: 900px) {
+		#ImageLogo{
+			width: 80%;
+			height: auto;
+			text-align: center;
+		}
+		#textHead{
+			padding-top:10px; 
+		}
+  	}
   
 	  
 
@@ -63,7 +64,7 @@
 				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
 			</div>
 			<div id="textHead" class="col-lg-8" >
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>      
+				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 		</div>
@@ -116,7 +117,7 @@
 			  </div>
 			</div>';
 			if($count%3==2)echo '</div>';
-			$count++;
+				$count++;
 			}
 		  	
 	  ?>
