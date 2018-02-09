@@ -41,11 +41,12 @@
 		#ImageLogo{
 			width: 80%;
 			height: auto;
-			img {display:block;margin:0 auto;}
+			
 		}
 		#textHead{
 			padding-top:10px; 
 		}
+		img {display:block;margin:0 auto};
   	}
   
 	  
