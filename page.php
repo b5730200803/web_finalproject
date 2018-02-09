@@ -31,7 +31,7 @@
       padding-top:0px; 
     }
     fontHead{
-    	font-size: 42px;
+    	font-size: 39px;
     }
     #textHead{
     	padding-top:100px;
@@ -75,7 +75,7 @@
 
 <div style="background-color: #f2f2f2; padding: 50px;">  
 	<div class="container">
-		 <nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="collapse navbar-collapse" style="padding: 10px;">
 	     
