@@ -48,8 +48,8 @@
 			}
 			img {display:block;margin:0 auto};
 			td{
-				padding: 10px;
-			}
+    			 padding: 10px;
+    		}
 		
 	  	}
 	  </style>
