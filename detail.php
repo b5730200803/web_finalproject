@@ -48,7 +48,7 @@
 			}
 			img {display:block;margin:0 auto};
 			td{
-				padding: 5px;
+				padding: 10px;
 			}
 		
 	  	}
