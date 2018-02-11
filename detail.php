@@ -93,7 +93,7 @@
 						หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
 						ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 						รหัสบ้าน : '.$mlab_data[0]->password.'<br>
-						จำนวนห้อง : '.$count_room.'
+						จำนวนห้อง : '.$count_room.'<br>
 						สมาชิกภายในบ้าน
 
 						<table>
@@ -135,7 +135,7 @@
 							$UserAll = mlab_house_show_userid($houseId);
 							foreach ($UserAll as $User) {
 								$mlab_userdetail = show_user_line($accesstoken,$User);
-								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='100px'/></td>";
+								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='100px' style='border-radius:100%' /></td>";
 							}
 
 					  echo '</tr>
