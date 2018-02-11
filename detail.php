@@ -124,16 +124,13 @@
 								curl_close($sent);
 								return json_decode($result);
 							}
-							$UserAll = lab_house_show_userid($houseId);
+							$UserAll = mlab_house_show_userid($houseId);
 							foreach ($UserAll as $User) {
 								$mlab_userdetail = show_user_line($accesstoken,$User);
 								echo "<td><img src='".$mlab_userdetail->pictureUrl." width='50'/></td>";
 							}
 
 					  echo '</tr>
-
-
-
 						</table>
 
 					</div>
