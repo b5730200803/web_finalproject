@@ -36,6 +36,10 @@
 	    #textHead{
 	    	padding-top:100px;
 	    }
+	    td{
+    			 padding: 10px;
+    	}
+		
 
 	  	@media only screen and (max-width: 900px) {
 			#ImageLogo{
