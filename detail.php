@@ -47,10 +47,10 @@
 				padding-top:10px; 
 			}
 			img {display:block;margin:0 auto};
-
 			td{
-				width: 20px;
+				padding: 5px;
 			}
+		
 	  	}
 	  </style>
 	  	
@@ -131,7 +131,7 @@
 							$UserAll = mlab_house_show_userid($houseId);
 							foreach ($UserAll as $User) {
 								$mlab_userdetail = show_user_line($accesstoken,$User);
-								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='50px'/></td>";
+								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='100px'/></td>";
 							}
 
 					  echo '</tr>
