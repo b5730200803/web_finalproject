@@ -94,7 +94,7 @@
 						ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 						รหัสบ้าน : '.$mlab_data[0]->password.'<br>
 						จำนวนห้อง : '.$count_room.'
-
+						สมาชิกภายในบ้าน
 
 						<table>
 							<tr>';
