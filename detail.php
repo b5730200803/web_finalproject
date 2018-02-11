@@ -92,7 +92,7 @@
 						จำนวนห้อง : '.$count_room.'
 
 
-						<table class="table-bordered">
+						<table>
 							<tr>';
 
 
