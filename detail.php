@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <?php
+	$mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
 	$HomeID = $_POST["NameID"];
 	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
+
 
 
 ?>
@@ -73,6 +75,7 @@
 	  <div class="row">
 	 
 		<?php
+			
 			$count_room = count($mlab_data[0]->source);
 			echo '
 			<div class="col-sm-12">
@@ -83,6 +86,56 @@
 						ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
 						รหัสบ้าน : '.$mlab_data[0]->password.'<br>
 						จำนวนห้อง : '.$count_room.'
+
+
+						<table class="table table-bordered">
+							<tr>';
+
+
+							$accesstoken = "z3jt/2q0mCFXVvwjx0fBKCn3TgHC2VfasMU+7v9pkPckOgxl2HjWKG75ZSYJEm4wXh9C1K0g8CPObNqtQ8Ni+lmDN95xq/nONV27ue6Xg79zs4SrJr0ESdPPCTqV3Zgf+arO+HY0AsbVfCuLlJRB9AdB04t89/1O/w1cDnyilFU=";
+							$mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+							$houseId = $mlab_data[0]->id;
+
+							function mlab_house_show_userid($houseId){
+							    $mlab_json = file_get_contents($GLOBALS['mlab_path'].'user?apiKey='.$GLOBALS['mlab_apikey'].'&q={"houseid":"'.$houseId.'"}');
+							    $mlab_data = json_decode($mlab_json);
+							    $UserAll = array();
+								foreach ($mlab_data as $user) {
+									array_push($UserAll,$user->user);
+								}
+								return $UserAll;
+							}
+
+
+							function show_user_line($accesstoken,$userId){
+								$sent = curl_init();
+								$url = "https://api.line.me/v2/bot/profile/".$userId;
+								curl_setopt($sent,CURLOPT_URL,$url);
+								curl_setopt($sent,CURLOPT_CUSTOMREQUEST,"GET");
+								
+								$arrayheader = array();
+								$arrayheader[] = "Content-Type: application/json";
+								$arrayheader[] = "Authorization: Bearer {$accesstoken}"; //Beaver --> Bearer 
+								curl_setopt($sent,CURLOPT_HTTPHEADER,$arrayheader);
+								curl_setopt($sent,CURLOPT_RETURNTRANSFER,true);
+								curl_setopt($sent,CURLOPT_FOLLOWLOCATION,1);
+								curl_setopt($sent, CURLOPT_SSL_VERIFYPEER, false);
+								$result = curl_exec($sent);
+								curl_close($sent);
+								return json_decode($result);
+							}
+							$UserAll = lab_house_show_userid($houseId);
+							foreach ($UserAll as $User) {
+								$mlab_userdetail = show_user_line($accesstoken,$User);
+								echo "<td><img src='".$mlab_userdetail->pictureUrl." width='50'/></td>";
+							}
+
+					  echo '</tr>
+
+
+
+						</table>
+
 					</div>
 				</div>
 			</div>';
