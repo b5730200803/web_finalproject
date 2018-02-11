@@ -135,7 +135,7 @@
 							$UserAll = mlab_house_show_userid($houseId);
 							foreach ($UserAll as $User) {
 								$mlab_userdetail = show_user_line($accesstoken,$User);
-								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='80x' style='border-radius:100%' /></td>";
+								echo "<td><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></td>";
 							}
 
 					  echo '</tr>
