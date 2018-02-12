@@ -89,7 +89,7 @@
 			td{
     			 padding: 10px;
     		}
-    		th{
+    		th,td{
     			text-align: center;
     		}
 		
@@ -134,7 +134,7 @@
 						จำนวนห้อง : '.$count_room.'<br>
 						สมาชิกภายในบ้าน
 
-						<table >
+						<table>
 							<thead>
 								<tr>';
 
