@@ -86,11 +86,10 @@
 				padding-top:10px; 
 			}
 			img {display:block;margin:0 auto};
-			td{
-    			 padding: 10px;
-    		}
+			}
     		th,td{
-    			text-align: center;
+    			 padding: 10px;
+    			 text-align: center;
     		}
 		
 	  	}
