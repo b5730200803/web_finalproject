@@ -135,7 +135,7 @@
 								$UserAllName = mlab_house_show_userid($houseId);
 								foreach ($UserAllName as $User) {
 									$mlab_userdetail = show_user_line($accesstoken,$User);
-									echo "<th>".$mlab_data->displayName."</th>";
+									echo "<th>".$mlab_userdetail->displayName."</th>";
 								}
 
 
