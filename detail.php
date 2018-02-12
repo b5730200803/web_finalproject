@@ -127,11 +127,11 @@
 				<div class="panel panel-success">
 					<div class="panel-heading ">รายละเอียด </div>
 					<div class="panel-body">
-						หมายเลขบ้าน : '.$mlab_data[0]->id.' <br>
-						ชื่อบ้าน : '.$mlab_data[0]->name.'<br>
-						รหัสบ้าน : '.$mlab_data[0]->password.'<br>
-						จำนวนห้อง : '.$count_room.'<br>
-						สมาชิกภายในบ้าน
+						<b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
+						<b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
+						<b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
+						<b>จำนวนห้อง</b> : '.$count_room.'<br>
+						<b>สมาชิกภายในบ้าน</b>
 
 						<table>
 							<thead>
