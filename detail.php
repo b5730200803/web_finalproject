@@ -71,6 +71,9 @@
 	    td{
     			 padding: 10px;
     	}
+		th{
+    			text-align: center;
+    	}
 		
 
 	  	@media only screen and (max-width: 900px) {
@@ -131,7 +134,7 @@
 						จำนวนห้อง : '.$count_room.'<br>
 						สมาชิกภายในบ้าน
 
-						<table class="text-center">
+						<table >
 							<thead>
 								<tr>';
 
