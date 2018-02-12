@@ -86,6 +86,9 @@
 			td{
     			 padding: 10px;
     		}
+    		th{
+    			text-align: center;
+    		}
 		
 	  	}
 	  </style>
