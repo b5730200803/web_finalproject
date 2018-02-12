@@ -128,7 +128,7 @@
 						จำนวนห้อง : '.$count_room.'<br>
 						สมาชิกภายในบ้าน
 
-						<table>
+						<table class="text-center">
 							<thead>
 								<tr>';
 
