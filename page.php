@@ -34,7 +34,7 @@
     	font-size: 39px;
     }
     #textHead{
-    	padding-top:100px;
+    	padding:50px;
     }
 
   	@media only screen and (max-width: 900px) {
@@ -44,7 +44,7 @@
 			
 		}
 		#textHead{
-			padding-top:10px; 
+			padding:5px; 
 		}
 		img {display:block;margin:0 auto};
   	}
