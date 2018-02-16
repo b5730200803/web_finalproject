@@ -33,16 +33,14 @@
     }
     fontHead{
     	font-size: 30px;
-    	color: #FFFFFF;
+    	color: #000000;
     }
     #textHead{
     	padding-top:50px;
     	padding-bottom: 10px; 
     	padding-left:  100px;
     }
-    p{
-    	color: #EEEEEE;
-    }
+   
 
   	@media only screen and (max-width: 900px) {
 		#ImageLogo{
