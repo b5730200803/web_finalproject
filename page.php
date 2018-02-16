@@ -73,28 +73,30 @@
 
 <div class="jumbotron" >
 	<div class="container ">
-			<div id="textHead" class="col-lg-8" >
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
-				<p>Remote Lighting Control via LINE Chatbot</p>
-			</div>
-		
+
+
+		<nav class="navbar navbar-inverse ">
+		  <div class="container-fluid">
+		    <form class="navbar-form navbar-right" action="/action_page.php">
+		      <div class="form-group">
+		      		<input type="radio"   name="Name_House">
+		        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
+		      </div>
+		      <div class="form-group">
+		      	<input type="radio"   name="Password_House">
+		        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
+		      </div>
+		      <button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+		  </div>
+		</nav>
+		<div id="textHead" class="col-lg-8" >
+			<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
+			<p>Remote Lighting Control via LINE Chatbot</p>
+		</div>
 	</div>
 </div>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="form-group">
-      		<input type="radio"   name="Name_House">
-        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
-      </div>
-      <div class="form-group">
-      	<input type="radio"   name="Password_House">
-        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-</nav>
+
 
 <div style="padding: 50px;">  
 	<div class="container">
