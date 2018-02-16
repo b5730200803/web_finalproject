@@ -69,8 +69,13 @@
 				<p>Remote Lighting Control via LINE Chatbot</p>
 			</div>
 		</div>
+	
+</div>
 
-		<nav class="navbar navbar-inverse">
+
+<div style="padding: 50px;">  
+	<div class="container">
+	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="collapse navbar-collapse" style="padding: 10px;">
 	     
@@ -96,13 +101,6 @@
 	    </div>
 	  </div>
 	</nav>
-	
-</div>
-
-
-<div style="padding: 50px;">  
-	<div class="container">
-	
 	  <?php 
 	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
