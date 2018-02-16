@@ -71,8 +71,6 @@
 
 <div class="jumbotron" >
 	<div class="container ">
-		
-
 			<div id="textHead" class="col-lg-8" >
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
 				<p>Remote Lighting Control via LINE Chatbot</p>
