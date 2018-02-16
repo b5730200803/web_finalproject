@@ -36,7 +36,7 @@
     	color:  #FFFFFF;
     }
     #textHead{
-    	padding-top:50px;
+    	padding-top:20px;
     	padding-bottom: 10px; 
     	
     }
@@ -72,8 +72,7 @@
 
 
 <div class="jumbotron" >
-	<div class="container ">
-
+	
 
 		<nav class="navbar navbar-inverse ">
 		  <div class="container-fluid">
@@ -90,6 +89,7 @@
 		    </form>
 		  </div>
 		</nav>
+	<div class="container ">
 		<div id="textHead" class="col-lg-8" >
 			<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
 			<p>Remote Lighting Control via LINE Chatbot</p>
