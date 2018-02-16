@@ -77,11 +77,14 @@
 		<nav class="navbar navbar-inverse ">
 
 		  <div class="container-fluid">
-		  	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
+		  	  <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+      
+    		   </div>
 		    <form class="navbar-form navbar-right" action="/action_page.php">
 		      <div class="form-group">
 		      		<input type="radio"   name="Name_House">
