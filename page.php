@@ -69,13 +69,11 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+                               
       </button>
      
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
           <input type="text" class="form-control" placeholder="Search..">
