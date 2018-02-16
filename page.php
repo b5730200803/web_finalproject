@@ -27,11 +27,12 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-color: ##99CCFF;
+      background-color: ##66CCFF;
       padding:0px; 
     }
     fontHead{
     	font-size: 30px;
+    	color: #FFFFFF;
     }
     #textHead{
     	padding:50px;
