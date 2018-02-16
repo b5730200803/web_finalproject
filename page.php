@@ -28,7 +28,7 @@
     .jumbotron {
       margin-bottom: 0px;
       background-color:  #3399FF;
-      border: 5px #CCCCCC;
+      
       padding:0px; 
     }
     fontHead{
@@ -44,7 +44,7 @@
     	color:  #FFFFFF;
     }
     #search_tab{
-    	background-color: #000000;
+    	background-color: rgba(0,0,0,0.50);
     }
    
 
