@@ -32,12 +32,12 @@
       padding:0px; 
     }
     fontHead{
-    	font-size: 30px;
+    	font-size: 35px;
     	color:  #FFFFFF;
     }
     #textHead{
-    	padding-top:20px;
-    	padding-bottom: 10px; 
+    	padding-top:0px;
+    	padding-bottom: 30px; 
     	
     }
     p{
