@@ -73,48 +73,18 @@
 
 <div class="jumbotron" >
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
 		<nav class="navbar navbar-inverse ">
 
 		  <div class="container-fluid">
 		  	  <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Search">
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>                        
 			      </button>
 	  
 			   </div>
-			    <div class="collapse navbar-collapse" id="myNavbar">
+			    <div class="collapse navbar-collapse" id="Search">
 			    <form class="navbar-form navbar-right" action="/action_page.php">
 			      <div class="form-group">
 			      		<input type="radio"   name="Name_House">
@@ -124,7 +94,7 @@
 			      	<input type="radio"   name="Password_House">
 			        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
 			      </div>
-			      <button type="submit" class="btn btn-default">Submit</button>
+			      <button type="submit" class="btn btn-default">ค้นหา</button>
 			    </form>
 			     </div>
 		  </div>
