@@ -37,6 +37,9 @@
     #textHead{
     	padding:50px;
     }
+    p{
+    	color: #EEEEEE;
+    }
 
   	@media only screen and (max-width: 900px) {
 		#ImageLogo{
