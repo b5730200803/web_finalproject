@@ -28,7 +28,7 @@
     .jumbotron {
       margin-bottom: 0px;
       background-color: #FFFFFF;
-      border-bottom: 5px #CCCCCC;
+      border: 5px #CCCCCC;
       padding:0px; 
     }
     fontHead{
