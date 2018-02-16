@@ -43,6 +43,9 @@
     p{
     	color:  #FFFFFF;
     }
+    #search_tab{
+    	background-color: #000000;
+    }
    
 
   	@media only screen and (max-width: 900px) {
@@ -64,7 +67,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav id="search_tab" class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
