@@ -71,7 +71,7 @@
 </div>
 
 
-<div style="background-color: #f2f2f2; padding: 50px;">  
+<div style="padding: 50px;">  
 	<div class="container">
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
