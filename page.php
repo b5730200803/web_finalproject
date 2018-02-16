@@ -28,7 +28,7 @@
     .jumbotron {
       margin-bottom: 0px;
       background-image: url(img/blue.jpg);
-      padding-top:0px; 
+      padding:0px; 
     }
     fontHead{
     	font-size: 39px;
@@ -57,10 +57,7 @@
 <body>
 
 <div class="jumbotron" >
-
-	
 		<div class="row">
-			
 			<div id="textHead" class="col-lg-8" >
 				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
 				<p>Remote Lighting Control via LINE Chatbot</p>
