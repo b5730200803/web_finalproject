@@ -35,7 +35,9 @@
     	color: #FFFFFF;
     }
     #textHead{
-    	padding:50px;
+    	padding-top:50px;
+    	padding-bottom: 10px; 
+    	padding-left:  100px;
     }
     p{
     	color: #EEEEEE;
