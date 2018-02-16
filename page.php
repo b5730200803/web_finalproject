@@ -46,7 +46,10 @@
     #search_tab{
     	background-color: rgba(0,0,0,0.50);
     }
-   
+   	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  		border:0px;
+  	}
+  
 
   	@media only screen and (max-width: 900px) {
 		#ImageLogo{
