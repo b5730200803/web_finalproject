@@ -64,42 +64,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-     
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group input-group">
-          <input type="text" class="form-control" placeholder="Search..">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </span>        
-        </div>
-      </form>
-
-    </div>
-  </div>
-</nav>
 
 
 
 
 
-<div class="jumbotron" >
-		<div class="row">
-			<div id="textHead" class="col-lg-8" >
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
-				<p>Remote Lighting Control via LINE Chatbot</p>
-			</div>
-		</div>
-	
-</div>
+
 
 
 <div style="padding: 50px;">  
