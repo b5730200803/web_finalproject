@@ -75,10 +75,7 @@
       <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Messages</a></li>
-      </ul>
+    
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
           <input type="text" class="form-control" placeholder="Search..">
@@ -98,7 +95,7 @@
 
 
 
-	
+
 
 <div class="jumbotron" >
 		<div class="row">
