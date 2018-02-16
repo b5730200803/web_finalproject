@@ -31,7 +31,7 @@
       padding:0px; 
     }
     fontHead{
-    	font-size: 39px;
+    	font-size: 30px;
     }
     #textHead{
     	padding:50px;
