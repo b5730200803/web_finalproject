@@ -17,6 +17,14 @@
   <style>
 
 
+  	@font-face {
+    	font-family: myFirstFont;
+    	src: url(font/4804_KwangMD_Pukluk/4804_KwangMD_Pukluk.ttf);
+	}
+	body{
+		font-family: myFirstFont;
+	}
+
     .navbar {
       margin-bottom: 0px;
       border-radius: 0;
