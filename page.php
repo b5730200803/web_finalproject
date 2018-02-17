@@ -74,10 +74,8 @@
 
 
 
-<div class="jumbotron" >
-
+<!--<div class="jumbotron" >
 		<nav class="navbar navbar-inverse ">
-
 		  <div class="container-fluid">
 		  	  <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Search">
@@ -108,12 +106,11 @@
 			<p>Remote Lighting Control via LINE Chatbot</p>
 		</div>
 	</div>
-</div>
+</div>-->
 
 
 <div style="padding: 50px;">  
 	<div class="container">
-	
 	  <?php 
 	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
@@ -132,8 +129,7 @@
 			</div>';
 			if($count%3==2)echo '</div>';
 				$count++;
-			}
-		  	
+			}	
 	  ?>
 	</div><br>
 </div>
