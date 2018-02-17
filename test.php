@@ -33,15 +33,14 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">สวัสดี</p>
+              <h4 class="text-white">เกี่ยวกับ</h4>
+              <p class="text-muted">เว็บไซต์นนี้เป็นแบบจำลองการส่งข้อมูลจากไลน์ มาแสดงผลการควบคุมเปืดปิดไฟผ่านทางแชทบอท</p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
+              <h4 class="text-white">จัดทำโดย</h4>
               <ul class="list-unstyled">
-                <li><a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
-                <li><a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
+                <li>นางสาว ศุภากร ติระเดชยวัฒน์</li>
+                <li>นาย สหชัย ยวงพานิช</li>
               </ul>
             </div>
           </div>
