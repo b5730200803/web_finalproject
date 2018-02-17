@@ -168,9 +168,10 @@
 				</div>
 			  </div>
 			</div>';
-			if($count%3==2)echo '</div>';
+				if($count%3==2)echo '</div>';
 				$count++;
-			}	
+			}
+			if($count==0)echo "การค้นหาของคุณ -".$query."- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ";	
 	  ?>
 	</div><br>
 </div>
