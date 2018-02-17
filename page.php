@@ -2,8 +2,7 @@
 <?php
 	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty');
 	$mlab_data = json_decode($mlab_json);
-	
-
+	$query = (!empty($_GET["q"]))?$_GET["q"]:"";
 ?>
 <html lang="en">
 <head>
@@ -123,14 +122,9 @@
 	  
 			   </div>
 			    <div class="collapse navbar-collapse" id="Search">
-				    <form class="navbar-form navbar-right" action="/action_page.php">
+				    <form class="navbar-form navbar-right" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
 				      <div class="form-group">
-				      		<input type="radio"   name="Name_House">
-				        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
-				      </div>
-				      <div class="form-group">
-				      	<input type="radio"   name="Password_House">
-				        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
+				        <input type="text" class="form-control" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q" value="<?php echo $query; ?>">
 				      </div>
 				      <button type="submit" class="btn btn-default">ค้นหา</button>
 				    </form>
