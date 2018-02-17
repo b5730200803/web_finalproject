@@ -120,7 +120,6 @@
 	  <div class="row">
 	 
 		<?php
-			
 			$count_room = count($mlab_data[0]->source);
 			echo '
 			<div class="col-sm-12">
@@ -165,7 +164,6 @@
 					</div>
 				</div>
 			</div>';
-		 
 		?>
 	  </div>
 	</div>

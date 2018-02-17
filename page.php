@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <?php
-	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty');
-	$mlab_data = json_decode($mlab_json);
+	$mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+	$mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
+
 	$query = (!empty($_GET["q"]))?$_GET["q"]:"";
+	$mlab_json = file_get_contents($GLOBALS["mlab_path"]."house?apiKey=".$GLOBALS["mlab_apikey"]);
+	$mlab_data = json_decode($mlab_json);
 ?>
 <html lang="en">
 <head>
@@ -125,7 +128,7 @@
 			    	<?php if(!empty($query)){
 			    	echo "<div class=\"navbar-form navbar-left\">
 				   		<div class=\"navbar-form\">
-				    		คำค้นหา <font size=\"+3\">".$query."</font>
+				    		คำค้นหา <b>".$query."</b>
 			    		</div>
 				    </div>";
 					}
@@ -144,9 +147,17 @@
 	  <?php 
 	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
-			 if($count%3==0)echo '<div class="row">';
-			 echo '<div class="col-sm-4"> 
-			  <div class="panel panel-success">
+
+		  		if(!empty($query)){
+		  			if($query!=$mlab_obj->name && $query!=$mlab_obj->passsword){
+		  				continue;
+		  			}
+
+		  		}
+
+			 	if($count%3==0)echo '<div class="row">';
+			 	echo '<div class="col-sm-4"> 
+			  	<div class="panel panel-success">
 				<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
 				<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 				<div class="panel-footer text-center">
