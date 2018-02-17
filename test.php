@@ -49,7 +49,7 @@
       </div>
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-          <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand d-flex align-items-center">
+          <a href="#" class="navbar-brand d-flex align-items-center">
              <span class="glyphicon glyphicon-home"></span>
             <strong>Remote Lighting Control via LINE Chatbot</strong>
           </a>
