@@ -39,8 +39,8 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">จัดทำโดย</h4>
               <ul class="list-unstyled">
-                <li><font color="width">นางสาว ศุภากร ติระเดชยวัฒน์</font></li>
-                <li><font color="width">นาย สหชัย ยวงพานิช</font></li>
+                <li><font color="white">นางสาว ศุภากร ติระเดชยวัฒน์</font></li>
+                <li><font color="white">นาย สหชัย ยวงพานิช</font></li>
               </ul>
             </div>
           </div>
@@ -50,7 +50,7 @@
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
              <span class="glyphicon glyphicon-home"></span>
-            <strong>Remote Lighting Control via LINE Chatbot</strong>
+            <strong><font color="green">Remote Lighting Control via LINE Chatbot</font></strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
