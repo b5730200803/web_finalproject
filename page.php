@@ -116,7 +116,7 @@
 		</nav>
 	<div class="container ">
 		<div id="textHead" class="col-lg-8" >
-			<fontHead1>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead1>
+			<fontHead1>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead1><br>
 			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
 		</div>
 	</div>
