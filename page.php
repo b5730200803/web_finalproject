@@ -122,9 +122,17 @@
 	  
 			   </div>
 			    <div class="collapse navbar-collapse" id="Search">
+			    	<?php if(!empty($query)){
+			    	echo "<div class=\"navbar-form navbar-left\">
+				   		<div class=\"navbar-form\">
+				    		คำค้นหา <font size=\"+3\">".$query."</font>
+			    		</div>
+				    </div>";
+					}
+				    ?>
 				    <form class="navbar-form navbar-right" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
 				      <div class="form-group">
-				        <input type="text" class="form-control" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q" value="<?php echo $query; ?>">
+				        <input type="text" size="35" class="form-control" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q" value="<?php echo $query; ?>">
 				      </div>
 				      <button type="submit" class="btn btn-default">ค้นหา</button>
 				    </form>
