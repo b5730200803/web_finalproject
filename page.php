@@ -74,13 +74,13 @@
 		}
 		img {display:block;margin:0 auto};
 		 fontHead1{
-    		font-size: 30px;
+    		font-size: 25px;
     		color:  #1F1209;
     	}
 
     	fontHead2{
     		color:  #1F1209;
-    		font-size: 15px;
+    		font-size: 20px;
     	}
 
   	}
