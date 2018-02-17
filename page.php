@@ -171,7 +171,10 @@
 				if($count%3==2)echo '</div>';
 				$count++;
 			}
-			if($count==0)echo "การค้นหาของคุณ -".$query."- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ";	
+			if($count==0){
+				echo '<div class="col-sm-4"></div>';
+				echo '<div class="col-sm-4"><div class="panel panel-warning"><font size="+3">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font></div></div>';	
+	  		}
 	  ?>
 	</div><br>
 </div>
