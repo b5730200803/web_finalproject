@@ -74,7 +74,6 @@
 		#textHead{
 			padding:5px; 
 		}
-		img {display:block;margin:0 auto};
 		 fontHead1{
     		font-size: 15px;
     		color:  #1F1209;
