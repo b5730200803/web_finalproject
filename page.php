@@ -149,7 +149,7 @@
 		  	foreach($mlab_data as $mlab_obj) {
 
 		  		if(!empty($query)){
-		  			if($query!=$mlab_obj->name && $query!=$mlab_obj->passsword){
+		  			if($query!=$mlab_obj->name && $query!=$mlab_obj->password){
 		  				continue;
 		  			}
 
