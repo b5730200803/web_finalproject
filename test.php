@@ -17,8 +17,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
-
     <title>Web Line ChatBot</title>
 
     <!-- Bootstrap core CSS -->
@@ -26,7 +24,6 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
   <body>
@@ -53,13 +50,7 @@
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
           <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand d-flex align-items-center">
-               <div class="w3-padding w3-xlarge w3-teal">
-                <i class="glyphicon glyphicon-home"></i>
-                <i class="glyphicon glyphicon-search"></i>
-                <i class="glyphicon glyphicon-cloud"></i>
-                <i class="glyphicon glyphicon-trash"></i>
-                Welcome!
-              </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
             <strong>Remote Lighting Control via LINE Chatbot</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,6 +67,15 @@
           <h1 class="jumbotron-heading">น้องตะวัน</h1>
           <p class="lead text-muted">การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</p>
           <p>
+            <?php if(!empty($query)){
+              echo "<div class=\"navbar-form navbar-left\">
+              <div class=\"navbar-form\">
+                คำค้นหา <b>".$query."</b>
+              </div>
+            </div>";
+          }
+            ?>
+
             <form class="navbar-form navbar-right" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
               <div class="form-group">
                 <input type="text" size="35" class="form-control text-center" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q" >
@@ -112,69 +112,6 @@
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านพ่อแบง</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านเรา</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านพ่อแบง</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านเรา</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
             
            
 
