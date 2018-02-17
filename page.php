@@ -172,8 +172,8 @@
 				$count++;
 			}
 			if($count==0){
-				echo '<div class="col-sm-4"></div>';
-				echo '<div class="col-sm-4"><div class="panel panel-warning"><font size="+3">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font></div></div>';	
+				echo '<div class="col-sm-3"></div>';
+				echo '<div class="col-sm-6"><div class="panel panel-warning"><div class="panel-heading " style="text-align: center;"><font size="+1">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font></div></div></div>';	
 	  		}
 	  ?>
 	</div><br>
