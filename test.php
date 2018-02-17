@@ -102,19 +102,20 @@
               }
 
             }
-
+            $countmember = 1;
+            $laseuse = 9;
             $timmeunit = "นาที";
             echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
-                    <br/>จำนวนสมาชิก : '.1.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
+                    <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">ดูรายละเอียด</button>
                     </div>
-                    <small class="text-muted">ใช้งานล่าสุด '.9.' '.$timeunit.'ที่แล้ว</small>
+                    <small class="text-muted">ใช้งานล่าสุด '.$lastuse.' '.$timeunit.'ที่แล้ว</small>
                   </div>
                 </div>
               </div>
