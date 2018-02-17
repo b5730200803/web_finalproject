@@ -41,7 +41,7 @@
     	
     }
     p{
-    	color:  #FFFFFF;
+    	color:  #1F1209;
     }
     #search_tab{
     	background-color: rgba(0,0,0,0.50);
