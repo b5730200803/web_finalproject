@@ -45,7 +45,7 @@
     	color:  #1F1209;
     }
     #textHead{
-    	padding-top:0px;
+    	padding-top:10px;
     	padding-bottom: 30px; 
     	
     }
