@@ -39,8 +39,8 @@
       background-image: url(img/blue.jpg);
       padding:0px; 
     }
-    fontHead{
-    	font-size: 35px;
+    fontHead1{
+    	font-size: 50px;
     	color:  #1F1209;
     }
     #textHead{
@@ -48,14 +48,19 @@
     	padding-bottom: 30px; 
     	
     }
-    p{
+    fontHead2{
     	color:  #1F1209;
+    	font-size: 30px;
     }
     #search_tab{
     	background-color: rgba(0,0,0,0.50);
     }
    	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
   		border:0px;
+  	}
+
+  	.panel-heading, .btn-success{
+  		font-size: 20px;
   	}
   
 
@@ -111,8 +116,8 @@
 		</nav>
 	<div class="container ">
 		<div id="textHead" class="col-lg-8" >
-			<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
-			<p>Remote Lighting Control via LINE Chatbot</p>
+			<fontHead1>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead1>
+			<fontHead2>Remote Lighting Control via LINE Chatbot<fontHead2>
 		</div>
 	</div>
 </div>
