@@ -78,7 +78,7 @@
 
             <form class="navbar-form navbar-right" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
               <div class="form-group">
-                <input type="text" size="35" class="form-control text-center" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q" >
+                <input type="text" size="35" class="form-control text-center" placeholder="กรอกชื่อบ้านหรือรหัสบ้าน 6 ตัว" name="q"  value="<?php echo $query; ?>">
               </div>
               <button type="submit" class="btn btn-default" width="100%">ค้นหา</button>
             </form>
@@ -88,29 +88,45 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-
           <div class="row">
 
 
 
+          <?php 
+          $count = 0;
+          foreach($mlab_data as $mlab_obj) {
 
+            if(!empty($query)){
+              if($query!=$mlab_obj->name && $query!=$mlab_obj->password){
+                continue;
+              }
 
+            }
 
-            <div class="col-md-4">
+            $timmeunit = "นาที";
+            echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
                 <div class="card-body">
-                  <p class="card-text"><strong>บ้านแม่แพร</strong>
-                    <br/>จำนวนสมาชิก : 2 คน<br/>จำนวนห้อง : 7 ห้อง<br/></p>
+                  <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
+                    <br/>จำนวนสมาชิก : '.1.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">ดูรายละเอียด</button>
                     </div>
-                    <small class="text-muted">ใช้งานล่าสุด 9 นาทีที่แล้ว</small>
+                    <small class="text-muted">ใช้งานล่าสุด '.9.' '.$timeunit.'ที่แล้ว</small>
                   </div>
                 </div>
               </div>
-            </div>
+            </div>';
+            $count++;
+          }
+          if($count==0){
+            echo '<font size="+1">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font>';  
+            }
+          ?>
+
+    
 
             
            
