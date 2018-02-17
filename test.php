@@ -39,8 +39,8 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">จัดทำโดย</h4>
               <ul class="list-unstyled">
-                <li>นางสาว ศุภากร ติระเดชยวัฒน์</li>
-                <li>นาย สหชัย ยวงพานิช</li>
+                <li><font color="width">นางสาว ศุภากร ติระเดชยวัฒน์</font></li>
+                <li><font color="width">นาย สหชัย ยวงพานิช</font></li>
               </ul>
             </div>
           </div>
