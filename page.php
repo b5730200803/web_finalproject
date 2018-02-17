@@ -161,7 +161,7 @@
 				<div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
 				<div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
 				<div class="panel-footer text-center">
-					<form action="detail.php" method="post">
+					<form action="detail.php" method="post" target="_blank">
 						<input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
 						<input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
 					</form>
