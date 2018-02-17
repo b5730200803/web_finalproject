@@ -74,7 +74,7 @@
 		}
 		img {display:block;margin:0 auto};
 		 fontHead1{
-    		font-size: 25px;
+    		font-size: 15px;
     		color:  #1F1209;
     	}
 
@@ -125,7 +125,7 @@
 	  </div>
 	</nav>
 
-	
+
 	<div class="container ">
 		<div id="textHead" class="col-lg-8" >
 			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
