@@ -49,9 +49,11 @@
       </div>
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-  
+          <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand d-flex align-items-center">
+             <span class="glyphicon glyphicon-home"></span>
             <strong>Remote Lighting Control via LINE Chatbot</strong>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -105,7 +107,7 @@
             $timmeunit = "นาที";
             echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: auto; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
+                <img class="card-img-top" style="height: auto; width: 100%; display: block;" src="img/home.png" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
                     <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
