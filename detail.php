@@ -49,68 +49,85 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  <style>
-	    .navbar {
-	      margin-bottom: 0px;
-	      border-radius: 0;
-		  background-color:rgba(255,255,255,0.00);
-		  border: 0px;
-		  padding:15px; 
-	    }
-	 
-	    .jumbotron {
-	      margin-bottom: 0px;
-	      background-image: url(img/blue.jpg);
-	      padding-top:0px; 
-	    }
-	    fontHead{
-	    	font-size: 39px;
-	    }
-	    #textHead{
-	    	padding-top:100px;
-	    }
-	    td{
-    			 padding: 10px;
-    	}
-		th{
-    			text-align: center;
-    	}
-		
+		  	@font-face {
+		    	font-family: myFirstFont;
+		    	src: url(font/4804_KwangMD_Pukluk/4804_KwangMD_Pukluk.ttf);
+			}
+			body{
+				font-family: myFirstFont;
+			}
 
-	  	@media only screen and (max-width: 900px) {
-			#ImageLogo{
-				width: 80%;
-				height: auto;
-				
-			}
-			#textHead{
-				padding-top:10px; 
-			}
-			img {display:block;margin:0 auto};
-			}
-    		th,td{
-    			 padding: 10px;
-    			 text-align: center;
-    		}
-		
-	  	}
-	  </style>
-	  	
-	   
+		    .navbar {
+		      margin-bottom: 0px;
+		      border-radius: 0;
+			  background-color:rgba(255,255,255,0.00);
+			  border: 0px;
+			  padding:15px; 
+		    }
+		 
+		    .jumbotron {
+		      margin-bottom: 0px;
+		      background-image: url(img/blue.jpg);
+		      padding:0px; 
+		    }
+		    fontHead1{
+		    	font-size: 50px;
+		    	color:  #1F1209;
+		    }
+		    #textHead{
+		    	padding-top:10px;
+		    	padding-bottom: 30px; 
+		    	
+		    }
+		    fontHead2{
+		    	color:  #1F1209;
+		    	font-size: 30px;
+		    }
+		    #search_tab{
+		    	background-color: rgba(0,0,0,0.50);
+		    }
+		   	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+		  		border:0px;
+		  	}
+
+		  	.panel-heading, .btn-success{
+		  		font-size: 20px;
+		  	}
+		  
+
+		  	@media only screen and (max-width: 900px) {
+				#ImageLogo{
+					width: 80%;
+					height: auto;
+					
+				}
+				#textHead{
+					padding:5px; 
+				}
+				img {display:block;margin:0 auto};
+				 fontHead1{
+		    		font-size: 15px;
+		    		color:  #1F1209;
+		    	}
+
+		    	fontHead2{
+		    		color:  #1F1209;
+		    		font-size: 20px;
+		    	}
+
+		  	}	  
+		 </style>
 	</head>
 <body>
 
 <div class="jumbotron" >
 	<div class="container ">
-		<div class="row">
-			
-			<div class="col-lg-4" style="padding:20px;">
-				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
-			</div>
-			<div id="textHead" class="col-lg-8" >
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
-				<p>Remote Lighting Control via LINE Chatbot</p>
-			</div>
+		<div id="textHead" class="col-lg-8" >
+			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
+			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
 		</div>
+
+		
 	</div>
 </div>
 
