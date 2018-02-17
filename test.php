@@ -111,8 +111,16 @@
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
                     <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
+
+
+                 
+
+
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">ดูรายละเอียด</button>
+                       <form action="detail.php" method="post" target="_blank">
+                          <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
+                          <input   class="btn btn-success" name="btnSubmit" type="submit" value="ดูรายละเอียด">
+                      </form>
                     </div>
                     <small class="text-muted">ใช้งานล่าสุด '.$lastuse.' '.$timeunit.'ที่แล้ว</small>
                   </div>
