@@ -98,6 +98,7 @@
 
 
 <div class="jumbotron" >
+	<div class="container ">
 		<nav class="navbar navbar-inverse ">
 		  <div class="container-fluid">
 		  	  <div class="navbar-header">
@@ -109,7 +110,7 @@
 	  
 			   </div>
 			    <div class="collapse navbar-collapse" id="Search">
-			    <form class="navbar-form navbar-right" action="/action_page.php">
+			    <form class="navbar-form navbar-left" action="/action_page.php">
 			      <div class="form-group">
 			      		<input type="radio"   name="Name_House">
 			        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
@@ -123,7 +124,7 @@
 			     </div>
 		  </div>
 		</nav>
-	<div class="container ">
+	
 		<div id="textHead" class="col-lg-8" >
 			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
 			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
