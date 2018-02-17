@@ -107,7 +107,7 @@
             $timmeunit = "นาที";
             echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
+                <img class="card-img-top" style="height: auto; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
                     <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
