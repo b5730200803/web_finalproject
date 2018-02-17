@@ -33,7 +33,7 @@
     }
     fontHead{
     	font-size: 35px;
-    	color:  #FFFFFF;
+    	color:  #1F1209;
     }
     #textHead{
     	padding-top:0px;
