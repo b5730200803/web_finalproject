@@ -91,6 +91,9 @@
     			 padding: 10px;
     			 text-align: center;
     		}
+
+
+    		
 		
 	  	}
 	  </style>
@@ -101,15 +104,9 @@
 
 <div class="jumbotron" >
 	<div class="container ">
-		<div class="row">
-			
-			<div class="col-lg-4" style="padding:20px;">
-				<img id="ImageLogo" src="img/EN-limites-chatbot.png" width="120%" height="auto">
-			</div>
-			<div id="textHead" class="col-lg-8" >
-				<fontHead>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</fontHead>
-				<p>Remote Lighting Control via LINE Chatbot</p>
-			</div>
+		<div id="textHead" class="col-lg-8" >
+			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
+			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
 		</div>
 	</div>
 </div>
