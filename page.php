@@ -99,6 +99,13 @@
 
 <div class="jumbotron" >
 	<div class="container ">
+	
+	
+		<div id="textHead" class="col-lg-8" >
+			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
+			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
+		</div>
+
 		<nav class="navbar navbar-inverse ">
 		  <div class="container-fluid">
 		  	  <div class="navbar-header">
@@ -124,11 +131,6 @@
 			     </div>
 		  </div>
 		</nav>
-	
-		<div id="textHead" class="col-lg-8" >
-			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
-			<fontHead2>Remote Lighting Control via LINE Chatbot</fontHead2>
-		</div>
 	</div>
 </div>
 
