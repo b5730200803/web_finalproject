@@ -26,6 +26,7 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
   <body>
@@ -52,7 +53,13 @@
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
           <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand d-flex align-items-center">
-             <i class="glyphicon glyphicon-home"></i>
+               <div class="w3-padding w3-xlarge w3-teal">
+                <i class="glyphicon glyphicon-home"></i>
+                <i class="glyphicon glyphicon-search"></i>
+                <i class="glyphicon glyphicon-cloud"></i>
+                <i class="glyphicon glyphicon-trash"></i>
+                Welcome!
+              </div>
             <strong>Remote Lighting Control via LINE Chatbot</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
