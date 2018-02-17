@@ -74,7 +74,8 @@
 
 
 
-<!--<div class="jumbotron" >
+
+<div class="jumbotron" >
 		<nav class="navbar navbar-inverse ">
 		  <div class="container-fluid">
 		  	  <div class="navbar-header">
@@ -106,7 +107,7 @@
 			<p>Remote Lighting Control via LINE Chatbot</p>
 		</div>
 	</div>
-</div>-->
+</div>
 
 
 <div style="padding: 50px;">  
