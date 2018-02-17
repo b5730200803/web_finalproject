@@ -58,11 +58,11 @@
     <div class="collapse navbar-collapse" id="Search">
             <?php if(!empty($query)){
             echo "<div class=\"navbar-form navbar-left\">
-              <div class=\"navbar-form\">
-                คำค้นหา <b>".$query."</b>
-              </div>
-            </div>";
-          }
+                    <div class=\"navbar-form\">
+                      คำค้นหา <b>".$query."</b>
+                    </div>
+                  </div>";
+              }
             ?>
             <form class="navbar-form navbar-right" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
               <div class="form-group">
@@ -86,22 +86,24 @@
 
           }
 
-        if($count%3==0)echo '<div class="row">';
-        echo '<div class="col-sm-4"> 
-          <div class="panel panel-success">
-        <div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
-        <div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">
-          <form action="detail.php" method="post" target="_blank">
-            <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
-            <input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
-          </form>
-        </div>
-        </div>
-      </div>';
-        if($count%3==2)echo '</div>';
-        $count++;
-      }
+          if($count%3==0)echo '<div class="row">';
+          echo '<div class="col-sm-4"> 
+                  <div class="panel panel-success">
+                    <div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
+                    <div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer text-center">
+                      <form action="detail.php" method="post" target="_blank">
+                        <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
+                        <input class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
+                      </form>
+                    </div>
+                  </div>
+                </div>';
+          if($count%3==2)echo '</div>';
+          $count++;
+        }
+        if($count%3!=0)echo '</div>';
+
       if($count==0){
         echo '<div class="col-sm-3"></div>';
         echo '<div class="col-sm-6"><div class="panel panel-warning"><div class="panel-heading " style="text-align: center;"><font size="+1">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font></div></div></div>';  
@@ -112,11 +114,7 @@
 
 
 <footer class="container-fluid text-center">
-  <p>Online Store Copyright</p>  
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
+  <p>Online Store Copyright</p>
 </footer>
 
 </body>
