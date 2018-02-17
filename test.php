@@ -50,7 +50,7 @@
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
              <span class="glyphicon glyphicon-home"></span>
-            <strong><font color="#32CD32">Remote Lighting Control via LINE Chatbot</font></strong>
+            <strong><font color="#32CD32"></font>น้องตัวัน</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">น้องตะวัน</h1>
+          <h1 class="jumbotron-heading">Remote Lighting Control via LINE Chatbot</h1>
           <p class="lead text-muted">การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</p>
           <p>
             <?php if(!empty($query)){
