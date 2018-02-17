@@ -75,29 +75,38 @@
 </nav>
 
 <div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-  </div>
+     <?php 
+        $count = 0;
+        foreach($mlab_data as $mlab_obj) {
+
+          if(!empty($query)){
+            if($query!=$mlab_obj->name && $query!=$mlab_obj->password){
+              continue;
+            }
+
+          }
+
+        if($count%3==0)echo '<div class="row">';
+        echo '<div class="col-sm-4"> 
+          <div class="panel panel-success">
+        <div class="panel-heading ">ชื่อบ้าน: '.$mlab_obj->name.' #'.$mlab_obj->id.'</div>
+        <div class="panel-body"><img src="img/home-icon.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer text-center">
+          <form action="detail.php" method="post" target="_blank">
+            <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
+            <input   class="btn btn-success" name="btnSubmit" type="submit" value="รายละเอียด">
+          </form>
+        </div>
+        </div>
+      </div>';
+        if($count%3==2)echo '</div>';
+        $count++;
+      }
+      if($count==0){
+        echo '<div class="col-sm-3"></div>';
+        echo '<div class="col-sm-6"><div class="panel panel-warning"><div class="panel-heading " style="text-align: center;"><font size="+1">การค้นหาของคุณ -'.$query.'- ไม่ตรงกับชื่อบ้านหรือรหัสบ้านใดๆ</font></div></div></div>';  
+        }
+    ?>
 </div><br>
 
 
