@@ -139,7 +139,7 @@
 
     </main>
 
-    <footer class="text-muted">
+    <footer class="text-muted" style="background-color: #343a40;">
       
     </footer>
 
