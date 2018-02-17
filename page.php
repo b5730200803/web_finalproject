@@ -98,34 +98,6 @@
 
 
 <div class="jumbotron" >
-
-	<nav class="navbar navbar-inverse ">
-	  <div class="container-fluid">
-	  	  <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Search">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-  
-		   </div>
-		    <div class="collapse navbar-collapse" id="Search">
-			    <form class="navbar-form navbar-left" action="/action_page.php">
-			      <div class="form-group">
-			      		<input type="radio"   name="Name_House">
-			        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
-			      </div>
-			      <div class="form-group">
-			      	<input type="radio"   name="Password_House">
-			        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
-			      </div>
-			      <button type="submit" class="btn btn-default">ค้นหา</button>
-			    </form>
-		    </div>
-	  </div>
-	</nav>
-
-
 	<div class="container ">
 		<div id="textHead" class="col-lg-8" >
 			<fontHead1><b>การควบคุมการเปิดปิดไฟผ่านทางไลน์แชทบอท</b></fontHead1><br>
@@ -138,7 +110,35 @@
 
 
 <div style="padding: 50px;">  
+
 	<div class="container">
+	 	<nav class="navbar navbar-inverse ">
+		  <div class="container-fluid">
+		  	  <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Search">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+	  
+			   </div>
+			    <div class="collapse navbar-collapse" id="Search">
+				    <form class="navbar-form navbar-right" action="/action_page.php">
+				      <div class="form-group">
+				      		<input type="radio"   name="Name_House">
+				        <input type="text" class="form-control" placeholder="ชื่อบ้าน" name="search">
+				      </div>
+				      <div class="form-group">
+				      	<input type="radio"   name="Password_House">
+				        <input type="text" class="form-control" placeholder="กรอกรหัสบ้าน 6ตัว" name="search">
+				      </div>
+				      <button type="submit" class="btn btn-default">ค้นหา</button>
+				    </form>
+			    </div>
+		  </div>
+		</nav>
+
+
 	  <?php 
 	  		$count = 0;
 		  	foreach($mlab_data as $mlab_obj) {
