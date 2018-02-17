@@ -35,7 +35,6 @@
  
     .jumbotron {
       margin-bottom: 0px;
-      background-color:  #3399FF;
       background-image: url(img/blue.jpg);
       padding:0px; 
     }
@@ -74,6 +73,16 @@
 			padding:5px; 
 		}
 		img {display:block;margin:0 auto};
+		 fontHead1{
+    		font-size: 30px;
+    		color:  #1F1209;
+    	}
+
+    	fontHead2{
+    		color:  #1F1209;
+    		font-size: 15px;
+    	}
+
   	}
   
 	  
