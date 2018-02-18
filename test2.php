@@ -55,6 +55,16 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
+
+    <style >
+       td{
+           padding: 10px;
+        }
+        th{
+            text-align: center;
+        }
+
+    </style>
      
   </head>
 
