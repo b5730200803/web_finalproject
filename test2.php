@@ -99,19 +99,35 @@
 
     <div class="container">    
       <div class="row">
+
+
+
+        <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some example text. Some example text.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+
+
+
      
         <?php
           $count_room = count($mlab_data[0]->source);
           echo '
-          <div class="col-sm-12">
-            <div class="panel panel-success">
-              <div class="panel-heading ">รายละเอียด </div>
-              <div class="panel-body">
-                <b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
-                <b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
-                <b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
-                <b>จำนวนห้อง</b> : '.$count_room.'<br>
-                <b>สมาชิกภายในบ้าน</b>
+          <div class="col-md-12">
+            <div class="card">
+              
+              <div class="card-body">
+                <h4 class="card-title">รายละเอียด</h4>
+                <b  class="card-text" >หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
+                <b  class="card-text">ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
+                <b  class="card-text">รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
+                <b  class="card-text">จำนวนห้อง</b> : '.$count_room.'<br>
+                <b  class="card-text">สมาชิกภายในบ้าน</b>
 
                 <table>
                   <thead>
