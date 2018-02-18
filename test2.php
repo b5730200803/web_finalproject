@@ -167,8 +167,8 @@
 
 
                 echo '<div class="col-md-4" style="margin-bottom:20px;">
-                    <div class="card">
-                      <h4 class="card-title">'.$light->name.'</h4>
+                    <div class="card box-shadow">
+                      <h4 class="card">'.$light->name.'</h4>
                       <div class="card-body text-center">';
                         if($light->status == "on" ){
                           echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
