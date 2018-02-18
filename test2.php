@@ -155,7 +155,7 @@
         <div class="container">
           <div class="row">
 
-            <?php
+           <?php
 
               foreach ($mlab_data[0]->source as $light) {
 
@@ -165,8 +165,8 @@
 
 
 
-                echo '<div class="col-md-4" >
-                     <div class="card mb-4 box-shadow">
+                echo '<div class="col-sm-4" style="margin-bottom:20px;">
+                    <div class="panel panel-info " style="margin:0px;">
                       <div class="panel-heading">'.$light->name.'</div>
                       <div class="panel-body text-center">';
                         if($light->status == "on" ){
@@ -199,23 +199,6 @@
 
 
 
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text"><strong>บ้านแม่แพร</strong>
-                    <br/>จำนวนสมาชิก : 2 คน<br/>จำนวนห้อง : 7 ห้อง<br/></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">ดูรายละเอียด</button>
-                    </div>
-                    <small class="text-muted">ใช้งานล่าสุด 9 นาทีที่แล้ว</small>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             
            
