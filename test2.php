@@ -179,7 +179,8 @@
                         }
                     
                     echo '</div>
-                      <div class="panel-footer">
+
+                      <div class="card-footer text-muted">
                         ';
                         echo 'หมายเหตุ  ';
                         if($light->permission=="true"){
