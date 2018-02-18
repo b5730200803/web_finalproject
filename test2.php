@@ -162,11 +162,14 @@
                 }
 
 
+  
 
-                echo '<div class="col-sm-4" style="margin-bottom:20px;">
-                    <div class="panel panel-info " style="margin:0px;">
-                      <div class="panel-heading">'.$light->name.'</div>
-                      <div class="panel-body text-center">';
+
+
+                echo '<div class="col-md-4" style="margin-bottom:20px;">
+                    <div class="card">
+                      <h4 class="card-title">'.$light->name.'</h4>
+                      <div class="card-body text-center">';
                         if($light->status == "on" ){
                           echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
                         }
