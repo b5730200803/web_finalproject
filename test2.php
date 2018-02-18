@@ -47,15 +47,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Web Chatbot Line</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
   <body>
@@ -93,63 +93,108 @@
 
     <main role="main">
 
-      <div class="container">    
-    <div class="row">
-   
-    <?php
-      $count_room = count($mlab_data[0]->source);
-      echo '
-      <div class="col-sm-12">
-        <div class="panel panel-success">
-          <div class="panel-heading ">รายละเอียด </div>
-          <div class="panel-body">
-            <b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
-            <b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
-            <b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
-            <b>จำนวนห้อง</b> : '.$count_room.'<br>
-            <b>สมาชิกภายในบ้าน</b>
-
-            <table>
-              <thead>
-                <tr>';
-
-                $UserAll = mlab_house_show_userid($houseId);
-                foreach ($UserAll as $User) {
-                  $mlab_userdetail = show_user_line($accesstoken,$User);
-                  echo "<th><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></th>";
-                }
-
-            
-                echo '</tr>
 
 
-              </thead>
 
-              <tbody>
-                <tr>';
 
-                $UserAllName = mlab_house_show_userid($houseId);
-                foreach ($UserAllName as $User) {
-                  $mlab_userdetail = show_user_line($accesstoken,$User);
-                  echo "<td>".$mlab_userdetail->displayName."</td>";
-                }
 
-              echo '</tr>
-                </tbody>
-            </table>
+    <div class="container">    
+      <div class="row">
+     
+        <?php
+          $count_room = count($mlab_data[0]->source);
+          echo '
+          <div class="col-sm-12">
+            <div class="panel panel-success">
+              <div class="panel-heading ">รายละเอียด </div>
+              <div class="panel-body">
+                <b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
+                <b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
+                <b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
+                <b>จำนวนห้อง</b> : '.$count_room.'<br>
+                <b>สมาชิกภายในบ้าน</b>
 
-          </div>
-        </div>
-      </div>';
-    ?>
-    </div>
+                <table>
+                  <thead>
+                    <tr>';
+
+                    $UserAll = mlab_house_show_userid($houseId);
+                    foreach ($UserAll as $User) {
+                      $mlab_userdetail = show_user_line($accesstoken,$User);
+                      echo "<th><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></th>";
+                    }
+
+                
+                    echo '</tr>
+
+
+                  </thead>
+
+                  <tbody>
+                    <tr>';
+
+                    $UserAllName = mlab_house_show_userid($houseId);
+                    foreach ($UserAllName as $User) {
+                      $mlab_userdetail = show_user_line($accesstoken,$User);
+                      echo "<td>".$mlab_userdetail->displayName."</td>";
+                    }
+
+                  echo '</tr>
+                    </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>';
+        ?>
+      </div>
   </div>
 
 
       <div class="album py-5 bg-light">
         <div class="container">
-
           <div class="row">
+
+            <?php
+
+              foreach ($mlab_data[0]->source as $light) {
+
+                if($light->detail == "deleted"){
+                  continue;
+                }
+
+
+
+                echo '<div class="col-md-4" >
+                     <div class="card mb-4 box-shadow">
+                      <div class="panel-heading">'.$light->name.'</div>
+                      <div class="panel-body text-center">';
+                        if($light->status == "on" ){
+                          echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
+                        }
+                        else{
+                          echo '<img src="img/light-close.png"  style="width:100px" alt="Image">';
+                        }
+                    
+                    echo '</div>
+                      <div class="panel-footer">
+                        ';
+                        echo 'หมายเหตุ  ';
+                        if($light->permission=="true"){
+                          echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>'; 
+                        }
+                        else{
+                          echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';  
+                        }
+                        echo'
+                        </div>
+                      </div> 
+                  </div>';  
+              }
+
+            ?>
+
+
 
 
 
