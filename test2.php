@@ -120,7 +120,7 @@
                 <b  class="card-text">ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
                 <b  class="card-text">รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
                 <b  class="card-text">จำนวนห้อง</b> : '.$count_room.'<br>
-                <b  class="card-text">สมาชิกภายในบ้าน</b>
+                <b  class="card-text">สมาชิกภายในบ้าน</b><br>
                 <div class="row">';
 
                       $UserAll = mlab_house_show_userid($houseId);
