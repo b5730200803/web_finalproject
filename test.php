@@ -117,7 +117,7 @@
 
 
                     <div class="btn-group">
-                       <form action="detail.php" method="post" target="_blank">
+                       <form action="test2.php" method="post" target="_blank">
                           <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
                           <input   class="btn btn-success" name="btnSubmit" type="submit" value="ดูรายละเอียด">
                       </form>
