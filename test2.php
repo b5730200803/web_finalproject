@@ -102,7 +102,7 @@
         <?php
           $count_room = count($mlab_data[0]->source);
           echo '
-          <div class="col-md-12" style="margin-top:20px;">
+          <div class="col-md-12" style="margin-top:50px; margin-bottom:50px;">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">รายละเอียด</h4>
