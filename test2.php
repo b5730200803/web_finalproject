@@ -103,9 +103,10 @@
         <?php
           $count_room = count($mlab_data[0]->source);
           echo '
-          <div class="col-md-12">
-            <div class="card mb-4 box-shadow">
-              <div class="card body">
+          <div class="col-sm-12">
+            <div class="panel panel-success">
+              <div class="panel-heading ">รายละเอียด </div>
+              <div class="panel-body">
                 <b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
                 <b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
                 <b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
