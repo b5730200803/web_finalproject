@@ -21,6 +21,16 @@
     return $UserAll;
   }
 
+  function mlab_house_count_room($houseId){
+    $mlab_json = file_get_contents($GLOBALS["mlab_path"]."house?apiKey=".$GLOBALS["mlab_apikey"].'&q={"id":"'.$houseId.'"}');
+    $mlab_data = json_decode($mlab_json);
+    $countroom = 0;
+    foreach($mlab_data[0]->source as $eachroom){
+      if($eachroom->detail=="working")$countroom++;
+    }
+    return $countroom;
+  }
+
 
   function show_user_line($accesstoken,$userId){
     $sent = curl_init();
@@ -110,7 +120,7 @@
     <div class="container">    
       <div class="row">
         <?php
-          $count_room = count($mlab_data[0]->source);
+          $count_room =  mlab_house_count_room($mlab_data[0]->id);
           echo '
           <div class="col-md-12" style="margin-top:50px; margin-bottom:50px;">
             <div class="card">
