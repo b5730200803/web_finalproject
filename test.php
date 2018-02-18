@@ -15,9 +15,6 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta http-equiv="refresh" content="5">
     <title>Web Line ChatBot</title>
 
     <!-- Bootstrap core CSS -->
@@ -28,7 +25,6 @@
   </head>
 
   <body>
-
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
