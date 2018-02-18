@@ -125,13 +125,12 @@
 
                       $UserAll = mlab_house_show_userid($houseId);
                       foreach ($UserAll as $User) {
-                        echo "<div class=\"col-2 text-center align-items-center\" stlye=\"padding:0px;\">";
+                        echo "<div class=\"col-3 text-center align-items-center\" stlye=\"padding:0px;\">";
                         $mlab_userdetail = show_user_line($accesstoken,$User);
                         echo "<img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /><br>";
                         echo "".$mlab_userdetail->displayName."";
                         echo "</div>";
                       }
-
 
                     echo '
                 </div>
