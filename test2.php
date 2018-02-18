@@ -122,34 +122,25 @@
                 <b  class="card-text">จำนวนห้อง</b> : '.$count_room.'<br>
                 <b  class="card-text">สมาชิกภายในบ้าน</b>
 
-                <table>
-                  <thead>
-                    <tr>';
+                <div class="col-sm-2">';
 
                     $UserAll = mlab_house_show_userid($houseId);
                     foreach ($UserAll as $User) {
                       $mlab_userdetail = show_user_line($accesstoken,$User);
-                      echo "<th><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></th>";
+                      echo "<img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /><br>";
                     }
 
                 
-                    echo '</tr>
-
-
-                  </thead>
-
-                  <tbody>
-                    <tr>';
+          
 
                     $UserAllName = mlab_house_show_userid($houseId);
                     foreach ($UserAllName as $User) {
                       $mlab_userdetail = show_user_line($accesstoken,$User);
-                      echo "<td>".$mlab_userdetail->displayName."</td>";
+                      echo "".$mlab_userdetail->displayName."";
                     }
 
-                  echo '</tr>
-                    </tbody>
-                </table>
+                  echo '
+                </div>
 
               </div>
             </div>
