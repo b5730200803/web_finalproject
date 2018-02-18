@@ -2,12 +2,18 @@
 
 <?php
   
-  include "http://line-light-chatbot.herokuapp.com/authentication.php";
-  include "http://line-light-chatbot.herokuapp.com/mlab.php";
+  $mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+  $mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
 
   $query = (!empty($_GET["q"]))?$_GET["q"]:"";
   $mlab_json = file_get_contents($GLOBALS["mlab_path"]."house?apiKey=".$GLOBALS["mlab_apikey"]);
   $mlab_data = json_decode($mlab_json);
+
+  function mlab_house_count_member($houseId){
+    $mlab_json = file_get_contents($GLOBALS['mlab_path'].'user?apiKey='.$GLOBALS['mlab_apikey'].'&q={"houseid":"'.$houseId.'"}');
+    $mlab_data = json_decode($mlab_json);
+    return count($mlab_data);
+  }
 
 ?>
 
