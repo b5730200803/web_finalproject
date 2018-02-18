@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 
 <?php
-  $mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
-  $mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
+  
+  include "http://line-light-chatbot.herokuapp.com/authentication.php";
+  include "http://line-light-chatbot.herokuapp.com/mlab.php";
 
   $query = (!empty($_GET["q"]))?$_GET["q"]:"";
   $mlab_json = file_get_contents($GLOBALS["mlab_path"]."house?apiKey=".$GLOBALS["mlab_apikey"]);
   $mlab_data = json_decode($mlab_json);
-?>
 
+?>
 
 
 
@@ -97,7 +98,7 @@
               }
 
             }
-            $countmember = 1;
+            $countmember = mlab_house_count_member($mlab_obj->id);
             $laseuse = 9;
             $timmeunit = "นาที";
             echo '<div class="col-md-4">
@@ -118,7 +119,7 @@
                           <input   class="btn btn-success" name="btnSubmit" type="submit" value="ดูรายละเอียด">
                       </form>
                     </div>
-                    <small class="text-muted">ใช้งานล่าสุด '.$lastuse.' '.$timeunit.'ที่แล้ว</small>
+                    <!--<small class="text-muted">ใช้งานล่าสุด '.$lastuse.' '.$timeunit.'ที่แล้ว</small>-->
                   </div>
                 </div>
               </div>
