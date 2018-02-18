@@ -15,6 +15,16 @@
     return count($mlab_data);
   }
 
+  function mlab_house_count_room($houseId){
+    $mlab_json = file_get_contents($GLOBALS["mlab_path"]."house?apiKey=".$GLOBALS["mlab_apikey"].'&q={"id":"'.$houseId.'"}');
+    $mlab_data = json_decode($mlab_json);
+    $countroom = 0;
+    foreach($mlab_data[0]->source as $eachroom){
+      if($eachroom->detail=="working")$countroom++;
+    }
+    return $countroom;
+  }
+
 ?>
 
 
@@ -105,6 +115,7 @@
 
             }
             $countmember = mlab_house_count_member($mlab_obj->id);
+            $countroom = mlab_house_count_room($mlab_obj->id);
             $laseuse = 9;
             $timmeunit = "นาที";
             echo '<div class="col-md-4">
@@ -112,7 +123,7 @@
                 <img class="card-img-top" style="height: auto; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
-                    <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.count($mlab_obj->source).' ห้อง<br/></p>
+                    <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.$countroom.' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
 
 
