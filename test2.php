@@ -1,5 +1,47 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/album/ -->
+
+<?php
+  $mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
+  $HomeID = $_POST["NameID"];
+  $mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
+  $mlab_data = json_decode($mlab_json);
+
+
+  $accesstoken = "z3jt/2q0mCFXVvwjx0fBKCn3TgHC2VfasMU+7v9pkPckOgxl2HjWKG75ZSYJEm4wXh9C1K0g8CPObNqtQ8Ni+lmDN95xq/nONV27ue6Xg79zs4SrJr0ESdPPCTqV3Zgf+arO+HY0AsbVfCuLlJRB9AdB04t89/1O/w1cDnyilFU=";
+            $mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+            $houseId = $mlab_data[0]->id;
+
+  function mlab_house_show_userid($houseId){
+      $mlab_json = file_get_contents($GLOBALS['mlab_path'].'user?apiKey='.$GLOBALS['mlab_apikey'].'&q={"houseid":"'.$houseId.'"}');
+      $mlab_data = json_decode($mlab_json);
+      $UserAll = array();
+    foreach ($mlab_data as $user) {
+      array_push($UserAll,$user->user);
+    }
+    return $UserAll;
+  }
+
+
+  function show_user_line($accesstoken,$userId){
+    $sent = curl_init();
+    $url = "https://api.line.me/v2/bot/profile/".$userId;
+    curl_setopt($sent,CURLOPT_URL,$url);
+    curl_setopt($sent,CURLOPT_CUSTOMREQUEST,"GET");
+    
+    $arrayheader = array();
+    $arrayheader[] = "Content-Type: application/json";
+    $arrayheader[] = "Authorization: Bearer {$accesstoken}"; //Beaver --> Bearer 
+    curl_setopt($sent,CURLOPT_HTTPHEADER,$arrayheader);
+    curl_setopt($sent,CURLOPT_RETURNTRANSFER,true);
+    curl_setopt($sent,CURLOPT_FOLLOWLOCATION,1);
+    curl_setopt($sent, CURLOPT_SSL_VERIFYPEER, false);
+    $result = curl_exec($sent);
+    curl_close($sent);
+    return json_decode($result);
+  }
+
+?>
+
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,90 +99,104 @@
 
           <div class="row">
 
+            <?php
+      $count_room = count($mlab_data[0]->source);
+      echo '
+      <div class="col-sm-12">
+        <div class="panel panel-success">
+          <div class="panel-heading ">รายละเอียด </div>
+          <div class="panel-body">
+            <b>หมายเลขบ้าน</b> : '.$mlab_data[0]->id.' <br>
+            <b>ชื่อบ้าน</b> : '.$mlab_data[0]->name.'<br>
+            <b>รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
+            <b>จำนวนห้อง</b> : '.$count_room.'<br>
+            <b>สมาชิกภายในบ้าน</b>
+
+            <table>
+              <thead>
+                <tr>';
+
+                $UserAll = mlab_house_show_userid($houseId);
+                foreach ($UserAll as $User) {
+                  $mlab_userdetail = show_user_line($accesstoken,$User);
+                  echo "<th><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></th>";
+                }
+
+            
+                echo '</tr>
+
+
+              </thead>
+
+              <tbody>
+                <tr>';
+
+                $UserAllName = mlab_house_show_userid($houseId);
+                foreach ($UserAllName as $User) {
+                  $mlab_userdetail = show_user_line($accesstoken,$User);
+                  echo "<td>".$mlab_userdetail->displayName."</td>";
+                }
+
+              echo '</tr>
+                </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>';
+    ?>
+    </div>
+  </div>
+
+
+  <br>
+
+
+  <div class="container" > 
+    <div class="row">
+      
+      <?php
+
+        foreach ($mlab_data[0]->source as $light) {
+
+          if($light->detail == "deleted"){
+            continue;
+          }
 
 
 
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text"><strong>บ้านแม่แพร</strong>
-                    <br/>จำนวนสมาชิก : 2 คน<br/>จำนวนห้อง : 7 ห้อง<br/></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">ดูรายละเอียด</button>
-                    </div>
-                    <small class="text-muted">ใช้งานล่าสุด 9 นาทีที่แล้ว</small>
+          echo '<div class="col-sm-4" style="margin-bottom:20px;">
+              <div class="panel panel-info " style="margin:0px;">
+                <div class="panel-heading">'.$light->name.'</div>
+                <div class="panel-body text-center">';
+                  if($light->status == "on" ){
+                    echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
+                  }
+                  else{
+                    echo '<img src="img/light-close.png"  style="width:100px" alt="Image">';
+                  }
+              
+              echo '</div>
+                <div class="panel-footer">
+                  ';
+                  echo 'หมายเหตุ  ';
+                  if($light->permission=="true"){
+                    echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>'; 
+                  }
+                  else{
+                    echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';  
+                  }
+                  echo'
                   </div>
-                </div>
-              </div>
-            </div>
+                </div> 
+            </div>';  
+        }
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านพ่อแบง</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+      ?>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านเรา</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านพ่อแบง</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="https://reg2.src.ku.ac.th/picnisit/5730200811.jpg" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">บ้านเรา</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             
            
 
