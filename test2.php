@@ -56,7 +56,15 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
 
+    <style >
+       td{
+           padding: 10px;
+        }
+        th{
+            text-align: center;
+        }
 
+    </style>
      
   </head>
 
@@ -113,34 +121,35 @@
                 <b  class="card-text">รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
                 <b  class="card-text">จำนวนห้อง</b> : '.$count_room.'<br>
                 <b  class="card-text">สมาชิกภายในบ้าน</b>
-                <div class="row">
-                  <div class="col-sm-2">
-                    <div class="card box-shadow">
-                        <div class="card-body">';
 
-                          $UserAll = mlab_house_show_userid($houseId);
-                          foreach ($UserAll as $User) {
-                            $mlab_userdetail = show_user_line($accesstoken,$User);
-                            echo "<img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' />";
-                          }
-                          echo '</div>
+                <table>
+                  <thead>
+                    <tr>';
 
-                        <div class="card-footer text-muted>
-                          <tr>';
+                    $UserAll = mlab_house_show_userid($houseId);
+                    foreach ($UserAll as $User) {
+                      $mlab_userdetail = show_user_line($accesstoken,$User);
+                      echo "<th><img src='".$mlab_userdetail->pictureUrl."' width='70x' style='border-radius:100%' /></th>";
+                    }
 
-                          $UserAllName = mlab_house_show_userid($houseId);
-                          foreach ($UserAllName as $User) {
-                            $mlab_userdetail = show_user_line($accesstoken,$User);
-                            echo "".$mlab_userdetail->displayName."";
-                          }
-
-                        echo '
-                          </div>
-                      </div>
-                  </div>
-                </div>
+                
+                    echo '</tr>
 
 
+                  </thead>
+
+                  <tbody>
+                    <tr>';
+
+                    $UserAllName = mlab_house_show_userid($houseId);
+                    foreach ($UserAllName as $User) {
+                      $mlab_userdetail = show_user_line($accesstoken,$User);
+                      echo "<td>".$mlab_userdetail->displayName."</td>";
+                    }
+
+                  echo '</tr>
+                    </tbody>
+                </table>
 
               </div>
             </div>
