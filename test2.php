@@ -121,7 +121,7 @@
                 <b  class="card-text">รหัสบ้าน</b> : '.$mlab_data[0]->password.'<br>
                 <b  class="card-text">จำนวนห้อง</b> : '.$count_room.'<br>
                 <b  class="card-text">สมาชิกภายในบ้าน</b><br>
-                <div class="row">';
+                <div class="row" style="margin-top:10px;">';
 
                       $UserAll = mlab_house_show_userid($houseId);
                       foreach ($UserAll as $User) {
