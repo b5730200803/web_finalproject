@@ -109,7 +109,8 @@
           foreach($mlab_data as $mlab_obj) {
 
             if(!empty($query)){
-              if($query!=$mlab_obj->name && $query!=$mlab_obj->password){
+              $findMatch = strpos($mlab_obj->name,$query);
+              if($findMatch === false && $query!=$mlab_obj->password){
                 continue;
               }
 
