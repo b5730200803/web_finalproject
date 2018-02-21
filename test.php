@@ -124,7 +124,7 @@
                 <img class="card-img-top" style="height: auto; width: 100%; display: block;" src="img/home-icon.png" data-holder-rendered="true">
                 <div class="card-body">
                   <p class="card-text"><strong>'.$mlab_obj->name.'</strong>
-                    <br/>รหัสบ้าน : '.$mlab_obj->password.' คน<br/>
+                    <br/>รหัสบ้าน : '.$mlab_obj->password.'
                     <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.$countroom.' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
 
