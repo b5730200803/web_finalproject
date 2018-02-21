@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 
 <?php
-  $mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
   $HomeID = $_POST["NameID"];
+  if(empty($HomeID)){
+    header('Location: test.php');
+    return ;
+  }
+  $mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
   $mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
   $mlab_data = json_decode($mlab_json);
 
