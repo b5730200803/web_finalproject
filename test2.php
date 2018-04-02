@@ -69,12 +69,29 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
-
+    <script>
+      
+      function getRoomFunction(str) {
+          if (str.length == 0) { 
+              document.getElementById("getRoom").innerHTML = "ขออภัยไม่สามารถ เชื่อมต่อฐานข้อมูลได้ ณ ตอนนี้";
+              return;
+          } else {
+              var xmlhttp = new XMLHttpRequest();
+              xmlhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                      document.getElementById("getRoom").innerHTML = this.responseText;
+                  }
+              };
+              xmlhttp.open("GET", "getroom.php?homeID=" + str, true);
+              xmlhttp.send();
+          }
+      }
+      <?php echo"setInterval(getRoomFunction(\"".$homeID."\"), 3000);"; ?>
+    </script>
      
   </head>
 
   <body>
-
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -149,52 +166,7 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <div class="row">
-
-           <?php
-
-              foreach ($mlab_data[0]->source as $light) {
-
-                if($light->detail == "deleted"){
-                  continue;
-                }
-
-
-                echo '<div class="col-md-4" style="margin-bottom:20px;">
-                    <div class="card box-shadow bg-light text-dark">
-
-                    <div class="card-header">'.$light->name.'</div>
-
-
-
-              
-                      <div class="card-body text-center">';
-                        if($light->status == "on" ){
-                          echo '<img src="img/light-open.png"  style="width:100px" alt="Image">';
-                        }
-                        else{
-                          echo '<img src="img/light-close.png"  style="width:100px" alt="Image">';
-                        }
-                    
-                    echo '</div>
-
-                      <div class="card-footer text-muted">
-                        ';
-                        echo 'หมายเหตุ  ';
-                        if($light->permission=="true"){
-                          echo '<font color="green"> อนุญาติให้ลบหลอดไฟ </font>'; 
-                        }
-                        else{
-                          echo '<font color="red"> ไม่อนุญาติให้ลบหลอดไฟ </font>';  
-                        }
-                        echo'
-                        </div>
-                      </div> 
-                  </div>';  
-              }
-
-            ?>
-
+          <div class="row" id="getRoom">
           </div>
         </div>
       </div>
