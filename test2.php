@@ -160,7 +160,7 @@
                             document.getElementById("getRoom").innerHTML = this.responseText;
                         }
                     };
-                    xmlhttp.open("GET", "getroom.php?homeID=" + str, true);
+                    xmlhttp.open("GET", "getroom.php?HomeID=" + str, true);
                     xmlhttp.send();
                 }
             }
