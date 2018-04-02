@@ -149,6 +149,7 @@
           <div class="row" id="getRoom">
           </div>
           <script>
+            var again;
             function getRoomFunction(str) {
                 if (str.length == 0) { 
                     document.getElementById("getRoom").innerHTML = "ขออภัยไม่สามารถ เชื่อมต่อฐานข้อมูลได้ ณ ตอนนี้";
@@ -164,9 +165,10 @@
                     xmlhttp.send();
                 }
             }
-            function(){
-            <?php echo"var a = setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
+            function callback(){
+            <?php echo"again = setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
             }
+            settimeout(callback(),5000);
           </script>
         </div>
       </div>
