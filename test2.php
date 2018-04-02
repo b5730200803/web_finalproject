@@ -86,12 +86,14 @@
               xmlhttp.send();
           }
       }
-      <?php echo"setInterval(getRoomFunction(\"".$homeID."\"), 3000);"; ?>
+      function callback(){
+        <?php echo"setInterval(getRoomFunction(\"".$_POST["NameID"]."\"), 3000);"; ?>
+      }
     </script>
      
   </head>
 
-  <body>
+  <body onload="callback()">
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
