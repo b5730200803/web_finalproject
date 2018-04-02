@@ -167,7 +167,7 @@
             function callback(){
             <?php echo"setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
             }
-            callback();
+            setTimeout(callback(), 1000);
           </script>
         </div>
       </div>
