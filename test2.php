@@ -71,7 +71,7 @@
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="callback()">
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -164,7 +164,9 @@
                     xmlhttp.send();
                 }
             }
-            <?php echo"setInterval(getRoomFunction(\"".$HomeID."\"), 3000);"; ?>
+            function callback(){
+            <?php echo"setInterval(getRoomFunction(\"".$HomeID."\"), 1000);"; ?>
+            }
           </script>
         </div>
       </div>
