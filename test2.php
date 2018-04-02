@@ -164,10 +164,9 @@
                     xmlhttp.send();
                 }
             }
-            function callback(){
-            <?php echo"setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
+            function ){
+            <?php echo"var a = setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
             }
-            setTimeout(callback(), 1000);
           </script>
         </div>
       </div>
