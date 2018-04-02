@@ -164,7 +164,7 @@
                     xmlhttp.send();
                 }
             }
-            function ){
+            function(){
             <?php echo"var a = setInterval(getRoomFunction(\"".$HomeID."\"), 500);"; ?>
             }
           </script>
