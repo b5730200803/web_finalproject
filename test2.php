@@ -69,31 +69,9 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
-    <script>
-      
-      function getRoomFunction(str) {
-          if (str.length == 0) { 
-              document.getElementById("getRoom").innerHTML = "ขออภัยไม่สามารถ เชื่อมต่อฐานข้อมูลได้ ณ ตอนนี้";
-              return;
-          } else {
-              var xmlhttp = new XMLHttpRequest();
-              xmlhttp.onreadystatechange = function() {
-                  if (this.readyState == 4 && this.status == 200) {
-                      document.getElementById("getRoom").innerHTML = this.responseText;
-                  }
-              };
-              xmlhttp.open("GET", "getroom.php?homeID=" + str, true);
-              xmlhttp.send();
-          }
-      }
-      function callback(){
-        <?php echo"setInterval(getRoomFunction(\"".$_POST["NameID"]."\"), 3000);"; ?>
-      }
-    </script>
-     
   </head>
 
-  <body onload="callback()">
+  <body>
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -170,6 +148,24 @@
         <div class="container">
           <div class="row" id="getRoom">
           </div>
+          <script>
+            function getRoomFunction(str) {
+                if (str.length == 0) { 
+                    document.getElementById("getRoom").innerHTML = "ขออภัยไม่สามารถ เชื่อมต่อฐานข้อมูลได้ ณ ตอนนี้";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("getRoom").innerHTML = this.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "getroom.php?homeID=" + str, true);
+                    xmlhttp.send();
+                }
+            }
+            <?php echo"setInterval(getRoomFunction(\"".$homeID."\"), 3000);"; ?>
+          </script>
         </div>
       </div>
 
