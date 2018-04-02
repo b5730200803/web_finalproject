@@ -169,7 +169,7 @@
             <?php echo"again = setInterval(\"getRoomFunction('".$HomeID."')\", 2000);"; ?>
 
             }
-            setTimeout("callback()",5000);
+            setTimeout("callback()",100);
           </script>
         </div>
       </div>
