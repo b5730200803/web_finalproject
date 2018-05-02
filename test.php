@@ -127,11 +127,7 @@
                     <br/>รหัสบ้าน : '.$mlab_obj->password.'
                     <br/>จำนวนสมาชิก : '.$countmember.' คน<br/>จำนวนห้อง : '.$countroom.' ห้อง<br/></p>
                   <div class="d-flex justify-content-between align-items-center">
-
-
-                 
-
-
+                  
                     <div class="btn-group">
                        <form action="test2.php" method="post" target="_blank">
                           <input type="hidden" name="NameID" value="'.$mlab_obj->id.'">
@@ -174,6 +170,6 @@
     <script>window.jQuery || document.write('<script src="https://getbootstrap.com/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+    <script src="https://raw.githubusercontent.com/imsky/holder/master/holder.min.js"></script>
   
 
