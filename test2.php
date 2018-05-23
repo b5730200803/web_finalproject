@@ -80,9 +80,9 @@
                 }
             }
             function callbackuser(){
-              <?php echo"again2 = setInterval(\"getUserFunction('".$HomeID."')\", 200);"; ?>
+              <?php echo"again2 = setInterval(\"getUserFunction('".$HomeID."')\", 500);"; ?>
             }
-            setTimeout("callbackuser()",200);
+            setTimeout("callbackuser()",500);
           </script>
   </div>
 
@@ -109,10 +109,10 @@
                 }
             }
             function callback(){
-            <?php echo"again = setInterval(\"getRoomFunction('".$HomeID."')\", 200);"; ?>
+            <?php echo"again = setInterval(\"getRoomFunction('".$HomeID."')\", 500);"; ?>
 
             }
-            setTimeout("callback()",200);
+            setTimeout("callback()",500);
           </script>
         </div>
       </div>
