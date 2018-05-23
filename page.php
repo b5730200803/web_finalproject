@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	$mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+	$mlab_apikey="MxA4oPkYHK7tsSRM5EdaktbV6uiJzPsq";
 	$mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
 
 	$query = (!empty($_GET["q"]))?$_GET["q"]:"";

@@ -1,6 +1,6 @@
 <?php
 	$HomeID = $_REQUEST["HomeID"];
-	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
+	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=MxA4oPkYHK7tsSRM5EdaktbV6uiJzPsq&q={"id":"'.$HomeID.'"}');
 	$mlab_data = json_decode($mlab_json);
 	foreach ($mlab_data[0]->source as $light) {
 

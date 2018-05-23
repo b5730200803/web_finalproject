@@ -1,12 +1,12 @@
 <?php
 	$HomeID = $_REQUEST["HomeID"];
   	$mlab_path="https://api.mlab.com/api/1/databases/line-chatbot-db/collections/";
-  	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=lSi8ib1187-rZW76qIsz3WxEgOgHrrty&q={"id":"'.$HomeID.'"}');
+  	$mlab_json = file_get_contents('https://api.mlab.com/api/1/databases/line-chatbot-db/collections/house?apiKey=MxA4oPkYHK7tsSRM5EdaktbV6uiJzPsq&q={"id":"'.$HomeID.'"}');
   	$mlab_data = json_decode($mlab_json);
 
 
   	$accesstoken = "z3jt/2q0mCFXVvwjx0fBKCn3TgHC2VfasMU+7v9pkPckOgxl2HjWKG75ZSYJEm4wXh9C1K0g8CPObNqtQ8Ni+lmDN95xq/nONV27ue6Xg79zs4SrJr0ESdPPCTqV3Zgf+arO+HY0AsbVfCuLlJRB9AdB04t89/1O/w1cDnyilFU=";
-  	$mlab_apikey="lSi8ib1187-rZW76qIsz3WxEgOgHrrty";
+  	$mlab_apikey="MxA4oPkYHK7tsSRM5EdaktbV6uiJzPsq";
   	$houseId = $mlab_data[0]->id;
 
   	function mlab_house_show_userid($houseId){
